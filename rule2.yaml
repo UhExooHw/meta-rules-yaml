@@ -3,4 +3,4 @@ payload:
 - GEOSITE,youtube
 - GEOSITE,spotify
 - DOMAIN-KEYWORD,cloudflare
-- DOMAIN-SUFFIX,store.steampowered.com
+- DOMAIN,store.steampowered.com
