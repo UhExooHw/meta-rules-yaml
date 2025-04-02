@@ -3,5 +3,8 @@ payload:
 - GEOSITE,youtube
 - GEOSITE,spotify
 - GEOSITE,discord
+- GEOSITE,microsoft
+- GEOSITE,xbox
+- GEOSITE,netflix
 - DOMAIN,store.steampowered.com
 - DOMAIN-KEYWORD,cloudflare
