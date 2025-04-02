@@ -6,5 +6,8 @@ payload:
 - GEOSITE,microsoft
 - GEOSITE,xbox
 - GEOSITE,netflix
+- GEOSITE,paypal
+- GEOSITE,bybit
+- GEOSITE,github
 - DOMAIN,store.steampowered.com
 - DOMAIN-KEYWORD,cloudflare
