@@ -2,5 +2,6 @@ payload:
 - GEOSITE,google
 - GEOSITE,youtube
 - GEOSITE,spotify
+- GEOSITE,discord
 - DOMAIN,store.steampowered.com
 - DOMAIN-KEYWORD,cloudflare
