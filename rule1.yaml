@@ -25,3 +25,4 @@ payload:
   - GEOSITE,youtube
   - GEOSITE,discord
   - GEOSITE,spotify
+  - DOMAIN-KEYWORD,cloudflare
