@@ -21,8 +21,3 @@ payload:
   - IP-CIDR6,2405:8100::/32
   - IP-CIDR6,2a06:98c0::/29
   - IP-CIDR6,2c0f:f248::/32
-  - GEOSITE,google
-  - GEOSITE,youtube
-  - GEOSITE,discord
-  - GEOSITE,spotify
-  - DOMAIN-KEYWORD,cloudflare
