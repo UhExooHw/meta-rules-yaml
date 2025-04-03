@@ -8,5 +8,7 @@ payload:
 - GEOSITE,paypal
 - GEOSITE,bybit
 - GEOSITE,github
+- GEOSITE,protonmail
+- GEOSITE,meta
 - DOMAIN,store.steampowered.com
 - DOMAIN-KEYWORD,cloudflare
