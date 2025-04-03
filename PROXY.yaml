@@ -13,3 +13,6 @@ payload:
 - GEOSITE,mastercard
 - GEOSITE,disney
 - GEOSITE,amazon
+- GEOSITE,openai
+- GEOSITE,google
+- GEOSITE,youtube
