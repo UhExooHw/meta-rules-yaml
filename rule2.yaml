@@ -6,7 +6,7 @@ payload:
 - GEOSITE,microsoft
 - GEOSITE,netflix
 - GEOSITE,paypal
-- GEOSITE,bybit
+- GEOSITE,category-cryptocurrency
 - GEOSITE,github
 - GEOSITE,protonmail
 - GEOSITE,meta
