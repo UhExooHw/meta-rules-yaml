@@ -55,14 +55,14 @@ rule-providers:
     type: http
     behavior: classical
     format: yaml
-    url: https://raw.githubusercontent.com/UhExooHw/clash-rules/refs/heads/main/PROXY.yaml
+    url: https://raw.githubusercontent.com/UhExooHw/meta-rules-yaml/refs/heads/main/PROXY.yaml
     path: ./rebullet/PROXY.yaml
     interval: 86400
   REJECT:
     type: http
     behavior: classical
     format: yaml
-    url: https://raw.githubusercontent.com/UhExooHw/clash-rules/refs/heads/main/REJECT.yaml
+    url: https://raw.githubusercontent.com/UhExooHw/meta-rules-yaml/refs/heads/main/REJECT.yaml
     path: ./rebullet/REJECT.yaml
     interval: 86400
   CLOUDFLARE:
