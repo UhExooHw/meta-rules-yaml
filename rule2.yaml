@@ -11,6 +11,7 @@ payload:
 - GEOSITE,protonmail
 - GEOSITE,meta
 - GEOSITE,x
+- GEOSITE,twitter
 - GEOSITE,akamai
 - GEOSITE,cloudflare
 - GEOSITE,fastly
