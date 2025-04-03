@@ -12,8 +12,5 @@ payload:
 - GEOSITE,meta
 - GEOSITE,x
 - GEOSITE,twitter
-- GEOSITE,akamai
-- GEOSITE,cloudflare
-- GEOSITE,fastly
 - GEOSITE,visa
 - GEOSITE,mastercard
