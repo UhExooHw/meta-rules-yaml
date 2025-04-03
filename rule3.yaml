@@ -4,3 +4,4 @@ payload:
 - DOMAIN-KEYWORD,avast
 - DOMAIN-KEYWORD,kaspersky
 - DOMAIN-KEYWORD,2gis
+- DOMAIN-SUFFIX,avg.com
