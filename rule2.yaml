@@ -13,4 +13,4 @@ payload:
 - GEOSITE,x
 - GEOSITE,akamai
 - GEOSITE,cloudflare
-- DOMAIN,store.steampowered.com
+- GEOSITE,fastly
