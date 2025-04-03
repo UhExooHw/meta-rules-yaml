@@ -10,6 +10,7 @@ This repository contains a set of configurations for **Clash Meta** with custom 
 - `GeoLite2-ASN.mmdb`
 - `cloudflare.yaml`
 - `google.yaml`
+- `fastly.yaml`
 
 📝 These files are licensed under the **GNU General Public License v3.0** (GPLv3).  
 See: https://www.gnu.org/licenses/gpl-3.0.html
