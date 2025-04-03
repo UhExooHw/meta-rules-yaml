@@ -16,3 +16,4 @@ payload:
 - GEOSITE,openai
 - GEOSITE,google
 - GEOSITE,youtube
+- GEOSITE,cloudflare
