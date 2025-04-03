@@ -1,6 +1,4 @@
 payload:
-- GEOSITE,google
-- GEOSITE,youtube
 - GEOSITE,spotify
 - GEOSITE,discord
 - GEOSITE,microsoft
