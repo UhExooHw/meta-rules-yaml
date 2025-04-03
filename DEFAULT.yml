@@ -5,6 +5,7 @@ ipv6: true
 tcp-concurrent: true
 keep-alive-interval: 25
 unified-delay: false
+log-level: info
 
 profile:
   store-selected: true
@@ -14,24 +15,35 @@ tun:
   enable: true
   stack: system
   dns-hijack:
-    - "any:53"
+    - any:53
+    - tcp://any:53
+    - '[::]:53'
   auto-route: true
   auto-detect-interface: true
   strict-route: true
 
 dns:
   enable: true
+  listen: 0.0.0.0:53
   use-hosts: true
   ipv6: true
+  enhanced-mode: fake-ip              
+  fake-ip-range: 198.18.0.1/16        
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+    - '*.lan'
+    - '*.local'
+    - 'localhost'
   default-nameserver:
     - 8.8.8.8
     - 8.8.4.4
   nameserver:
-    - https://8.8.8.8/dns-query#PROXY
-    - https://8.8.4.4/dns-query#PROXY
-    - 8.8.8.8
-    - 8.8.4.4
-
+    - https://dns.google/dns-query#PROXY
+  fallback:
+    - tls://dns.google#PROXY
+  proxy-server-nameserver:         
+    - https://dns.google/dns-query
+    
 geodata-mode: true
 geox-url:
   geoip: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
