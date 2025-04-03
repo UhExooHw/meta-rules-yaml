@@ -2,6 +2,7 @@ mode: rule
 port: 7890
 allow-lan: false
 ipv6: true
+tcp-concurrent: true
 keep-alive-interval: 25
 unified-delay: false
 
@@ -30,6 +31,13 @@ dns:
     - https://8.8.4.4/dns-query#PROXY
     - 8.8.8.8
     - 8.8.4.4
+
+geodata-mode: true
+geox-url:
+  geoip: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
+  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
+  asn: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
 
 {{ conf | except("proxy-groups", "port", "mode") | yaml }}
 
@@ -61,14 +69,14 @@ rule-providers:
     type: http
     behavior: classical
     format: yaml
-    url: https://raw.githubusercontent.com/UhExooHw/clash-rules/refs/heads/main/CLOUDFLARE.yaml 
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/cloudflare.yaml 
     path: ./rebullet/CLOUDFLARE.yaml
     interval: 86400
   GOOGLE:
     type: http
     behavior: classical
     format: yaml
-    url: https://raw.githubusercontent.com/UhExooHw/clash-rules/refs/heads/main/GOOGLE.yaml
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/google.yaml
     path: ./rebullet/GOOGLE.yaml
     interval: 86400
 rules:
