@@ -12,8 +12,4 @@ payload:
 - GEOSITE,visa
 - GEOSITE,mastercard
 - GEOSITE,disney
-- GEOSITE,openai
 - GEOSITE,amazon
-- GEOSITE,google
-- GEOSITE,youtube
-- GEOSITE,cloudflare
