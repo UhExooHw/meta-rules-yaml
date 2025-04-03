@@ -11,7 +11,6 @@ grpc-opts:
 h2-opts:
   ip-version: dual
 
-# ws and httpupgrade are same in clash
 ws-opts:
   ip-version: dual
 
