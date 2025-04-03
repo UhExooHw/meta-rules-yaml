@@ -11,5 +11,6 @@ payload:
 - GEOSITE,protonmail
 - GEOSITE,meta
 - GEOSITE,x
+- GEOSITE,akamai
+- GEOSITE,cloudflare
 - DOMAIN,store.steampowered.com
-- DOMAIN-KEYWORD,cloudflare
