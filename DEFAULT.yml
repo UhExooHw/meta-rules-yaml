@@ -86,9 +86,17 @@ rule-providers:
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/fastly.yaml
     path: ./rebullet/FASTLY.yaml
     interval: 86400
+  CLOUDFRONT:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/cloudfront.yaml
+    path: ./rebullet/CLOUDFRONT.yaml
+    interval: 86400
 rules:
   - RULE-SET,PROXY,PROXY
   - RULE-SET,REJECT,REJECT
   - RULE-SET,CLOUDFLARE,PROXY
   - RULE-SET,GOOGLE,PROXY
   - RULE-SET,FASTLY,PROXY
+  - RULE-SET,CLOUDFRONT,PROXY
