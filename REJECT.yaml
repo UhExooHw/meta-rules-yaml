@@ -1,4 +1,5 @@
 payload:
+- GEOSITE,category-ads
 - GEOSITE,category-ads-all
 - DOMAIN-KEYWORD,avast
 - DOMAIN-KEYWORD,kaspersky
