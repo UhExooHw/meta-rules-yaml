@@ -1,0 +1,78 @@
+mode: rule
+port: 7890
+allow-lan: false
+ipv6: true
+keep-alive-interval: 25
+unified-delay: false
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+tun:
+  enable: true
+  stack: system
+  dns-hijack:
+    - "any:53"
+  auto-route: true
+  auto-detect-interface: true
+  strict-route: true
+
+dns:
+  enable: true
+  use-hosts: true
+  ipv6: true
+  default-nameserver:
+    - 8.8.8.8
+    - 8.8.4.4
+  nameserver:
+    - https://8.8.8.8/dns-query#PROXY
+    - https://8.8.4.4/dns-query#PROXY
+    - 8.8.8.8
+    - 8.8.4.4
+
+{{ conf | except("proxy-groups", "port", "mode") | yaml }}
+
+proxy-groups:
+- name: 'PROXY'
+  type: 'url-test'
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+  proxies:
+  {{ proxy_remarks | yaml | indent(2) }}
+{{ conf.get("proxy-groups", []) | yaml }}
+
+rule-providers:
+  PROXY:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/UhExooHw/clash-rules/refs/heads/main/PROXY.yaml
+    path: ./rebullet/PROXY.yaml
+    interval: 86400
+  REJECT:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/UhExooHw/clash-rules/refs/heads/main/REJECT.yaml
+    path: ./rebullet/REJECT.yaml
+    interval: 86400
+  CLOUDFLARE:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/UhExooHw/clash-rules/refs/heads/main/CLOUDFLARE.yaml 
+    path: ./rebullet/CLOUDFLARE.yaml
+    interval: 86400
+  GOOGLE:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/UhExooHw/clash-rules/refs/heads/main/GOOGLE.yaml
+    path: ./rebullet/GOOGLE.yaml
+    interval: 86400
+rules:
+  - RULE-SET,PROXY,PROXY
+  - RULE-SET,REJECT,REJECT
+  - RULE-SET,CLOUDFLARE,PROXY
+  - RULE-SET,GOOGLE,PROXY
