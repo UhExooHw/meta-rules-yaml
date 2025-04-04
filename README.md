@@ -2,7 +2,7 @@
 
 This repository contains a set of configurations for **Clash Meta** with custom geo-based routing.
 
-📦 It uses data from [MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat):
+📦 It uses data from [MetaCubeX/meta-rules-dat](https://github.com/MetaCubeX/meta-rules-dat) and [Loyalsoldier/v2ray-rules-dat](https://github.com/MetaCubeX/meta-rules-dat](https://github.com/Loyalsoldier/v2ray-rules-dat)
 
 - `geoip.dat`
 - `geosite.dat`
