@@ -37,12 +37,17 @@ dns:
   default-nameserver:
     - 8.8.8.8
     - 8.8.4.4
+    - 1.1.1.1
+    - 1.0.0.1
   nameserver:
     - https://dns.google/dns-query#PROXY
+    - https://cloudflare-dns.com/dns-query#PROXY
   fallback:
     - tls://dns.google#PROXY
+    - tls://one.one.one.one#PROXY
   proxy-server-nameserver:         
     - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
     
 geodata-mode: true
 geox-url:
