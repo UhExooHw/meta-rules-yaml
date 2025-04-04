@@ -17,3 +17,4 @@ payload:
 - GEOSITE,google
 - GEOSITE,youtube
 - GEOSITE,cloudflare
+- GEOSITE,fastly
