@@ -1,7 +1,7 @@
 mode: rule
 port: 7890
 allow-lan: false
-ipv6: true
+ipv6: false
 tcp-concurrent: true
 keep-alive-interval: 25
 unified-delay: false
@@ -26,7 +26,7 @@ dns:
   enable: true
   listen: 0.0.0.0:53
   use-hosts: true
-  ipv6: true
+  ipv6: false
   enhanced-mode: fake-ip              
   fake-ip-range: 198.18.0.1/16        
   fake-ip-filter-mode: blacklist
