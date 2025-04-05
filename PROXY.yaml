@@ -18,3 +18,4 @@ payload:
 - GEOSITE,youtube
 - GEOSITE,cloudflare
 - GEOSITE,fastly
+- DOMAIN-KEYWORD,infomaniak
