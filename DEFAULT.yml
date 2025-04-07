@@ -66,3 +66,9 @@ proxy-groups:
   proxies:
   {{ proxy_remarks | yaml | indent(2) }}
 {{ conf.get("proxy-groups", []) | yaml }}
+
+rules:
+   - GEOIP,ru,DIRECT
+   - GEOIP,private,DIRECT
+   - GEOSITE,category-ru,DIRECT
+   - GEOSITE,category-gov-ru,DIRECT
