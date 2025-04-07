@@ -27,8 +27,8 @@ dns:
   listen: 0.0.0.0:53
   use-hosts: true
   ipv6: false
-  enhanced-mode: fake-ip              
-  fake-ip-range: 198.18.0.1/16        
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - '*.lan'
@@ -45,10 +45,10 @@ dns:
   fallback:
     - tls://dns.switch.ch#PROXY
     - tls://one.one.one.one#PROXY
-  proxy-server-nameserver:         
+  proxy-server-nameserver:
     - https://dns.switch.ch/dns-query
     - https://cloudflare-dns.com/dns-query
-    
+
 geodata-mode: true
 geox-url:
   geoip: "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
