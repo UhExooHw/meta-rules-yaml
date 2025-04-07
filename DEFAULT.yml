@@ -110,6 +110,13 @@ rule-providers:
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/cloudfront.yaml
     path: ./rebullet/CLOUDFRONT.yaml
     interval: 86400
+  DISCORD:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/UhExooHw/meta-rules-yaml/refs/heads/main/DISCORD.yaml
+    path: ./rebullet/DISCORD.yaml
+    interval: 86400
 rules:
   - RULE-SET,PROXY,PROXY
   - RULE-SET,REJECT,REJECT
