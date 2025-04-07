@@ -35,19 +35,14 @@ dns:
     - '*.local'
     - 'localhost'
   default-nameserver:
-    - 8.8.8.8
-    - 8.8.4.4
-    - 1.1.1.1
-    - 1.0.0.1
+    - 130.59.31.248
+    - 130.59.31.251
   nameserver:
-    - https://dns.google/dns-query#PROXY
-    - https://cloudflare-dns.com/dns-query#PROXY
+    - https://dns.switch.ch/dns-query#PROXY
   fallback:
-    - tls://dns.google#PROXY
-    - tls://one.one.one.one#PROXY
+    - tls://dns.switch.ch#PROXY
   proxy-server-nameserver:         
-    - https://dns.google/dns-query
-    - https://cloudflare-dns.com/dns-query
+    - https://dns.switch.ch/dns-query
     
 geodata-mode: true
 geox-url:
