@@ -1,4 +1,4 @@
-mode: rule
+mode: global
 port: 7890
 allow-lan: false
 ipv6: false
