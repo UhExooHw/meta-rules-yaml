@@ -37,17 +37,17 @@ dns:
   default-nameserver:
     - 130.59.31.248
     - 130.59.31.251
-    - 1.1.1.1
-    - 1.0.0.1
+    - 185.95.218.43
+    - 2a05:fc84::43
   nameserver:
     - https://dns.switch.ch/dns-query#PROXY
-    - https://cloudflare-dns.com/dns-query#PROXY
+    - https://dns.digitale-gesellschaft.ch/dns-query#PROXY
   fallback:
     - tls://dns.switch.ch#PROXY
-    - tls://one.one.one.one#PROXY
+    - tls://dns.digitale-gesellschaft.ch#PROXY
   proxy-server-nameserver:
     - https://dns.switch.ch/dns-query
-    - https://cloudflare-dns.com/dns-query
+    - https://dns.digitale-gesellschaft.ch/dns-query
 
 geodata-mode: true
 geox-url:
