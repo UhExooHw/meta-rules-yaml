@@ -35,18 +35,13 @@ dns:
     - '*.local'
     - 'localhost'
   default-nameserver:
-    - 130.59.31.248
-    - 130.59.31.251
     - 9.9.9.9
     - 149.112.112.112
   nameserver:
-    - https://dns.switch.ch/dns-query#PROXY
     - https://dns.quad9.net/dns-query#PROXY
   fallback:
-    - tls://dns.switch.ch#PROXY
     - tls://dns.quad9.net#PROXY
   proxy-server-nameserver:
-    - https://dns.switch.ch/dns-query
     - https://dns.quad9.net/dns-query
 
 geodata-mode: true
