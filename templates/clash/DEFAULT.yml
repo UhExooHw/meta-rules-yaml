@@ -1,11 +1,14 @@
-mode: rule
-port: 7890
+mixed-port: 2080
 allow-lan: false
-ipv6: true
 tcp-concurrent: true
+enable-process: true
+global-client-fingerprint: chrome
+mode: rule
+ipv6: true
 keep-alive-interval: 25
 unified-delay: false
-log-level: info
+
+{{ conf | except("proxy-groups", "port", "mode") | yaml }}
 
 profile:
   store-selected: true
@@ -44,56 +47,48 @@ dns:
   proxy-server-nameserver:
     - https://dns.quad9.net/dns-query
 
-geodata-mode: true
-geox-url:
-  geoip: "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
-  geosite: "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
-  mmdb: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
-  asn: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
-
-{{ conf | except("proxy-groups", "port", "mode") | yaml }}
-
 proxy-groups:
- - name: 'PROXY'
-   type: 'url-test'
-   url: 'http://www.gstatic.com/generate_204'
-   interval: 300
-   proxies:
-   {{ proxy_remarks | yaml | indent(2) }}
- {{ conf.get("proxy-groups", []) | yaml }}
- 
- rule-providers:
-   CLOUDFLARE:
-     type: http
-     behavior: classical
-     format: yaml
-     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/cloudflare.yaml 
-     path: ./rebullet/CLOUDFLARE.yaml
-     interval: 86400
-   GOOGLE:
-     type: http
-     behavior: classical
-     format: yaml
-     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/google.yaml
-     path: ./rebullet/GOOGLE.yaml
-     interval: 86400
-   FASTLY:
-     type: http
-     behavior: classical
-     format: yaml
-     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/fastly.yaml
-     path: ./rebullet/FASTLY.yaml
-     interval: 86400
-   CLOUDFRONT:
-     type: http
-     behavior: classical
-     format: yaml
-     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/cloudfront.yaml
-     path: ./rebullet/CLOUDFRONT.yaml
-     interval: 86400
-     
- rules:
-   - RULE-SET,CLOUDFLARE,PROXY
-   - RULE-SET,GOOGLE,PROXY
-   - RULE-SET,FASTLY,PROXY
-   - RULE-SET,CLOUDFRONT,PROXY
+- name: 'PROXY'
+  type: 'url-test'
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+  proxies:
+  {{ proxy_remarks | yaml | indent(2) }}
+{{ conf.get("proxy-groups", []) | yaml }}
+
+rule-providers:
+  GOOGLE:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/google.yaml
+    path: ./rebullet/google.yaml
+    interval: 86400
+  CLOUDFLARE:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/cloudflare.yaml
+    path: ./rebullet/cloudflare.yaml
+    interval: 86400
+  FASTLY:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/fastly.yaml
+    path: ./rebullet/fastly.yaml
+    interval: 86400
+  CLOUDFRONT:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/cloudfront.yaml
+    path: ./rebullet/cloudfront.yaml
+    interval: 86400
+
+rules:
+  - RULE-SET,GOOGLE,PROXY
+  - RULE-SET,CLOUDFLARE,PROXY
+  - RULE-SET,FASTLY,PROXY
+  - RULE-SET,CLOUDFRONT,PROXY
+  - MATCH,DIRECT
