@@ -1,4 +1,4 @@
-mode: global
+mode: rule
 port: 7890
 allow-lan: false
 ipv6: true
@@ -61,3 +61,24 @@ proxy-groups:
   proxies:
   {{ proxy_remarks | yaml | indent(2) }}
 {{ conf.get("proxy-groups", []) | yaml }}
+
+rule-providers:
+  CLOUDFLARE:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/cloudflare.yaml
+    path: ./rebullet/cloudflare.yaml
+    interval: 86400
+  GOOGLE:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/google.yaml
+    path: ./rebullet/google.yaml
+    interval: 86400
+
+rules:
+  - RULE-SET,CLOUDFLARE,PROXY
+  - RULE-SET,GOOGLE,PROXY
+  - MATCH,PROXY
