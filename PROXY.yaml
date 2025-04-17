@@ -1,0 +1,4 @@
+payload:
+- GEOSITE,youtube,PROXY
+- GEOSITE,google,PROXY
+- GEOSITE,spotify,PROXY
