@@ -92,9 +92,10 @@ rule-providers:
     url: https://raw.githubusercontent.com/UhExooHw/meta-rules-yaml/refs/heads/main/PROXY.yaml
     path: ./rebullet/proxy.yaml
     interval: 86400
+    
 rules:
-  - RULE-SET,GOOGLE,PROXY
   - RULE-SET,CLOUDFLARE,PROXY
+  - RULE-SET,GOOGLE,PROXY
   - RULE-SET,FASTLY,PROXY
   - RULE-SET,CLOUDFRONT,PROXY
   - RULE-SET,PROXY,PROXY
