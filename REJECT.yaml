@@ -3,3 +3,4 @@ payload:
 - DOMAIN-KEYWORD,kaspersky
 - DOMAIN-KEYWORD,mcafee
 - GEOSITE,category-ads-all
+- GEOSITE,win-spy
