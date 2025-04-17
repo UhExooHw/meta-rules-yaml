@@ -1,4 +1,5 @@
 payload:
+- DOMAIN-REGEX,^abc.*ua,PROXY
 - GEOSITE,youtube,PROXY
 - GEOSITE,google,PROXY
 - GEOSITE,spotify,PROXY
