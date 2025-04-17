@@ -13,5 +13,5 @@ payload:
 - GEOSITE,paypal
 - GEOSITE,visa
 - GEOSITE,mastercard
-- DOMAIN-SUFFIX,ua
 - DOMAIN,store.steampowered.com
+- GEOIP,UA
