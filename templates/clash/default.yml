@@ -92,6 +92,13 @@ rule-providers:
     url: https://raw.githubusercontent.com/UhExooHw/meta-rules-yaml/refs/heads/main/PROXY.yaml
     path: ./rebullet/proxy.yaml
     interval: 86400
+  REJECT:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/UhExooHw/meta-rules-yaml/refs/heads/main/REJECT.yaml
+    path: ./rebullet/reject.yaml
+    interval: 86400
     
 rules:
   - RULE-SET,CLOUDFLARE,PROXY
@@ -99,3 +106,4 @@ rules:
   - RULE-SET,CLOUDFRONT,PROXY
   - RULE-SET,FASTLY,PROXY
   - RULE-SET,PROXY,PROXY
+  - RULE-SET,REJECT,REJECT
