@@ -1,5 +1,5 @@
 payload:
-- DOMAIN-SUFFIX,.ua
+- GEOSITE,github
 - GEOSITE,youtube
 - GEOSITE,google
 - GEOSITE,spotify
