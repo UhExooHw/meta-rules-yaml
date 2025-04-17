@@ -2,3 +2,6 @@ payload:
 - GEOSITE,youtube,PROXY
 - GEOSITE,google,PROXY
 - GEOSITE,spotify,PROXY
+- GEOSITE,aws,PROXY
+- GEOSITE,cloudflare,PROXY
+- GEOSITE,fastly,PROXY
