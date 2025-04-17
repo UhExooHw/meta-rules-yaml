@@ -6,3 +6,4 @@ payload:
 - GEOSITE,aws
 - GEOSITE,cloudflare
 - GEOSITE,fastly
+- DOMAIN-SUFFIX,ua
