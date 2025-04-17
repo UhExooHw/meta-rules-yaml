@@ -1,8 +1,8 @@
 payload:
-- DOMAIN-SUFFIX,.ua,PROXY
-- GEOSITE,youtube,PROXY
-- GEOSITE,google,PROXY
-- GEOSITE,spotify,PROXY
-- GEOSITE,aws,PROXY
-- GEOSITE,cloudflare,PROXY
-- GEOSITE,fastly,PROXY
+- DOMAIN-SUFFIX,.ua
+- GEOSITE,youtube
+- GEOSITE,google
+- GEOSITE,spotify
+- GEOSITE,aws
+- GEOSITE,cloudflare
+- GEOSITE,fastly
