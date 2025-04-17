@@ -1,0 +1,5 @@
+payload:
+- GEOIP,RU
+- DOMAIN-SUFFIX,ru
+- GEOSITE,category-ru
+- GEOSITE,reddit
