@@ -1,9 +1,17 @@
 payload:
 - GEOSITE,github
+- GEOSITE,disney
+- GEOSITE,netflix
 - GEOSITE,youtube
 - GEOSITE,google
 - GEOSITE,spotify
-- GEOSITE,aws
+- GEOSITE,amazon
+- GEOSITE,tiktok
 - GEOSITE,cloudflare
 - GEOSITE,fastly
+- GEOSITE,bybit
+- GEOSITE,paypal
+- GEOSITE,visa
+- GEOSITE,mastercard
 - DOMAIN-SUFFIX,ua
+- DOMAIN,store.steampowered.com
