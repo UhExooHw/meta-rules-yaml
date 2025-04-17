@@ -1,6 +1,7 @@
 payload:
 - GEOSITE,github
 - GEOSITE,disney
+- GEOSITE,meta
 - GEOSITE,netflix
 - GEOSITE,youtube
 - GEOSITE,google
