@@ -85,10 +85,18 @@ rule-providers:
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/cloudfront.yaml
     path: ./rebullet/cloudfront.yaml
     interval: 86400
+  PROXY:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/UhExooHw/meta-rules-yaml/refs/heads/main/PROXY.yaml
+    path: ./rebullet/proxy.yaml
+    interval: 86400
 
 rules:
   - RULE-SET,GOOGLE,PROXY
   - RULE-SET,CLOUDFLARE,PROXY
   - RULE-SET,FASTLY,PROXY
   - RULE-SET,CLOUDFRONT,PROXY
+  - RULE-SET,PROXY,PROXY
   - MATCH,DIRECT
