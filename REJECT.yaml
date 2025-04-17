@@ -2,5 +2,4 @@ payload:
 - DOMAIN-KEYWORD,avast
 - DOMAIN-KEYWORD,kaspersky
 - DOMAIN-KEYWORD,mcafee
-- GEOSITE,category-ads
 - GEOSITE,category-ads-all
