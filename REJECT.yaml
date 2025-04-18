@@ -2,5 +2,6 @@ payload:
 - DOMAIN-KEYWORD,avast
 - DOMAIN-KEYWORD,kaspersky
 - DOMAIN-KEYWORD,mcafee
+- DOMAIN-KEYWORD,tns-counter
 - GEOSITE,category-ads-all
 - GEOSITE,win-spy
