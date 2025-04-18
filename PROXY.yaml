@@ -15,6 +15,7 @@ payload:
 - GEOSITE,mastercard
 - GEOSITE,twitter
 - GEOSITE,steam
+- GEOSITE,akamai
 - GEOIP,UA
 - GEOIP,google
 - GEOIP,cloudflare
