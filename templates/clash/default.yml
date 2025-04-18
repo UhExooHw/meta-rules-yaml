@@ -29,9 +29,11 @@ tun:
   auto-route: true
   auto-detect-interface: true
   strict-route: true
-
+  mtu: 1500
+  
 dns:
   enable: true
+  prefer-h3: true
   listen: 0.0.0.0:53
   use-hosts: true
   ipv6: true
@@ -43,13 +45,18 @@ dns:
     - '*.local'
     - 'localhost'
   default-nameserver:
+    - 130.59.31.248
+    - 130.59.31.251
     - 9.9.9.9
     - 149.112.112.112
   nameserver:
+    - https://dns.switch.ch/dns-query#PROXY
     - https://dns.quad9.net/dns-query#PROXY
   fallback:
+    - tls://dns.switch.ch#PROXY
     - tls://dns.quad9.net#PROXY
   proxy-server-nameserver:
+    - https://dns.switch.ch/dns-quer
     - https://dns.quad9.net/dns-query
 
 proxy-groups:
