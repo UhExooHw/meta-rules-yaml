@@ -56,7 +56,7 @@ dns:
     - tls://dns.switch.ch#PROXY
     - tls://dns.quad9.net#PROXY
   proxy-server-nameserver:
-    - https://dns.switch.ch/dns-quer
+    - https://dns.switch.ch/dns-query
     - https://dns.quad9.net/dns-query
 
 proxy-groups:
