@@ -18,5 +18,6 @@ payload:
 - GEOIP,cloudflare
 - GEOIP,fastly
 - GEOIP,cloudfront
+- GEOIP,facebook
 - DOMAIN-SUFFIX,ua
 - DOMAIN,store.steampowered.com
