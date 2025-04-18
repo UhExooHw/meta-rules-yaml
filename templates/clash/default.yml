@@ -62,34 +62,6 @@ proxy-groups:
 {{ conf.get("proxy-groups", []) | yaml }}
 
 rule-providers:
-  GOOGLE:
-    type: http
-    behavior: classical
-    format: yaml
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/google.yaml
-    path: ./rebullet/google.yaml
-    interval: 86400
-  CLOUDFLARE:
-    type: http
-    behavior: classical
-    format: yaml
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/cloudflare.yaml
-    path: ./rebullet/cloudflare.yaml
-    interval: 86400
-  FASTLY:
-    type: http
-    behavior: classical
-    format: yaml
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/fastly.yaml
-    path: ./rebullet/fastly.yaml
-    interval: 86400
-  CLOUDFRONT:
-    type: http
-    behavior: classical
-    format: yaml
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/cloudfront.yaml
-    path: ./rebullet/cloudfront.yaml
-    interval: 86400
   PROXY:
     type: http
     behavior: classical
@@ -116,7 +88,3 @@ rules:
   - RULE-SET,REJECT,REJECT
   - RULE-SET,DIRECT,DIRECT
   - RULE-SET,PROXY,PROXY
-  - RULE-SET,CLOUDFLARE,PROXY
-  - RULE-SET,GOOGLE,PROXY
-  - RULE-SET,CLOUDFRONT,PROXY
-  - RULE-SET,FASTLY,PROXY
