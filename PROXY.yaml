@@ -13,6 +13,10 @@ payload:
 - GEOSITE,paypal
 - GEOSITE,visa
 - GEOSITE,mastercard
-- DOMAIN,store.steampowered.com
 - GEOIP,UA
+- GEOIP,google
+- GEOIP,cloudflare
+- GEOIP,fastly
+- GEOIP,cloudfront
 - DOMAIN-SUFFIX,ua
+- DOMAIN,store.steampowered.com
