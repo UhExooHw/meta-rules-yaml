@@ -49,12 +49,15 @@ dns:
   nameserver:
     - https://dns.switch.ch/dns-query#PROXY
     - https://dns.quad9.net/dns-query#PROXY
+    - https://dns.digitale-gesellschaft.ch/dns-query#PROXY
   fallback:
     - tls://dns.switch.ch#PROXY
     - tls://dns.quad9.net#PROXY
+    - tls://dns.digitale-gesellschaft.ch#PROXY
   proxy-server-nameserver:
     - https://dns.switch.ch/dns-query
     - https://dns.quad9.net/dns-query
+    - https://dns.digitale-gesellschaft.ch/dns-query
 
 proxy-groups:
 - name: 'PROXY'
