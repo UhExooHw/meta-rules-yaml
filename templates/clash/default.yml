@@ -44,8 +44,6 @@ dns:
     - '*.local'
     - 'localhost'
   default-nameserver:
-    - 130.59.31.248
-    - 130.59.31.251
     - 9.9.9.9
     - 149.112.112.112
   nameserver:
