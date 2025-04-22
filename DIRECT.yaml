@@ -6,5 +6,4 @@ payload:
 - DOMAIN-SUFFIX,by
 - DOMAIN-SUFFIX,su
 - GEOSITE,category-ru
-- GEOSITE.private
 - GEOSITE,reddit
