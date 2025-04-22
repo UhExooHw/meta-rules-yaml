@@ -75,10 +75,10 @@ dns:
   - tls://dns.google#PROXY
   - tls://one.one.one.one#PROXY
   proxy-server-nameserver:
-  - tls://dns.switch.ch
-  - tls://dns.quad9.net
-  - tls://dns.google
-  - tls://one.one.one.one
+  - tls://dns.switch.ch#PROXY
+  - tls://dns.quad9.net#PROXY
+  - tls://dns.google#PROXY
+  - tls://one.one.one.one#PROXY
 proxy-groups:
 - name: PROXY
   type: url-test
