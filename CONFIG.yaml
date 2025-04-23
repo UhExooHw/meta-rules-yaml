@@ -4,7 +4,7 @@ tcp-concurrent: true
 enable-process: true
 global-client-fingerprint: chrome
 mode: rule
-log-level: debug
+log-level: warning
 ipv6: true
 keep-alive-interval: 25
 unified-delay: false
