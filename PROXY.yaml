@@ -19,6 +19,7 @@ payload:
 - GEOSITE,steam
 - GEOSITE,akamai
 - GEOSITE,microsoft
+- GEOSITE,archlinux
 - GEOIP,UA
 - GEOIP,google
 - GEOIP,cloudflare
