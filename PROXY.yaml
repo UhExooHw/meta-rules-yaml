@@ -18,6 +18,7 @@ payload:
 - GEOSITE,xai
 - GEOSITE,steam
 - GEOSITE,akamai
+- GEOSITE,microsoft
 - GEOIP,UA
 - GEOIP,google
 - GEOIP,cloudflare
