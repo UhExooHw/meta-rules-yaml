@@ -27,3 +27,4 @@ payload:
 - GEOIP,twitter
 - GEOIP,netflix
 - DOMAIN-SUFFIX,ua
+- DOMAIN-KEYWORD,akamai
