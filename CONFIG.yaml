@@ -31,12 +31,12 @@ proxies:
 - flow: xtls-rprx-vision
   name: REBULLET
   network: tcp
-  port: 
+  port: *
   reality-opts:
-    public-key: 
-    short-id: 
-  server: 
-  servername: 
+    public-key: *
+    short-id: *
+  server: *
+  servername: *
   tcp-opts:
     ip-version: dual
   tls: true
@@ -44,7 +44,7 @@ proxies:
   udp: true
   packet-encoding: xudp
   client-fingerprint: chrome
-  uuid: 
+  uuid: *
 rules:
 - RULE-SET,REJECT,REJECT
 - RULE-SET,DIRECT,DIRECT
