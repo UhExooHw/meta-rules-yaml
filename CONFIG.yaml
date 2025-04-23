@@ -66,6 +66,8 @@ tun:
   auto-detect-interface: true
   strict-route: true
   mtu: 1500
+  auto-redir: true
+  device: meta
 dns:
   enable: true
   prefer-h3: true
