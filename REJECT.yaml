@@ -4,4 +4,5 @@ payload:
 - DOMAIN-KEYWORD,mcafee
 - DOMAIN-KEYWORD,tns-counter
 - GEOSITE,category-ads-all
+- GEOSITE.category-porn
 - GEOSITE,win-spy
