@@ -4,7 +4,7 @@ tcp-concurrent: true
 enable-process: true
 global-client-fingerprint: chrome
 mode: rule
-log-level: warning
+log-level: error
 ipv6: true
 keep-alive-interval: 25
 unified-delay: false
@@ -31,12 +31,12 @@ proxies:
 - flow: xtls-rprx-vision
   name: REBULLET
   network: tcp
-  port: *
+  port: 
   reality-opts:
-    public-key: *
-    short-id: *
-  server: *
-  servername: *
+    public-key:
+    short-id:
+  server:
+  servername:
   tcp-opts:
     ip-version: dual
   tls: true
@@ -44,7 +44,7 @@ proxies:
   udp: true
   packet-encoding: xudp
   client-fingerprint: chrome
-  uuid: *
+  uuid:
 rules:
 - RULE-SET,REJECT,REJECT
 - RULE-SET,DIRECT,DIRECT
@@ -59,46 +59,30 @@ geox-url:
   asn: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb
 tun:
   enable: true
-  stack: mixed
+  stack: system
   dns-hijack:
   - any:53
   auto-route: true
   auto-detect-interface: true
   strict-route: true
   mtu: 1500
-  auto-redir: true
-  device: meta
 dns:
   enable: true
   prefer-h3: true
-  listen: :53
   use-hosts: true
+  use-system-hosts: true
+  listen: 127.0.0.1:6868
   ipv6: true
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter-mode: blacklist
-  fake-ip-filter:
-  - '*.lan'
-  - '*.local'
-  - localhost
+  enhanced-mode: redir-host
   default-nameserver:
-  - 9.9.9.9
-  - 8.8.8.8
-  nameserver:
-  - tls://dns.switch.ch#PROXY
-  - tls://dns.quad9.net#PROXY
-  - tls://dns.google#PROXY
-  - tls://one.one.one.one#PROXY
-  fallback:
-  - tls://dns.switch.ch#PROXY
-  - tls://dns.quad9.net#PROXY
-  - tls://dns.google#PROXY
-  - tls://one.one.one.one#PROXY
+    - '9.9.9.9'
+    - '8.8.8.8'
   proxy-server-nameserver:
-  - tls://dns.switch.ch#PROXY
-  - tls://dns.quad9.net#PROXY
-  - tls://dns.google#PROXY
-  - tls://one.one.one.one#PROXY
+    - '9.9.9.9'
+    - '8.8.8.8'
+  nameserver:
+    - 'tls://dns.quad9.net#PROXY'
+    - 'tls://dns.google#PROXY'
 proxy-groups:
 - name: PROXY
   type: select
