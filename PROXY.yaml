@@ -16,10 +16,10 @@ payload:
 - GEOSITE,mastercard
 - GEOSITE,x
 - GEOSITE,xai
+- GEOSITE,openai
 - GEOSITE,steam
 - GEOSITE,akamai
-- GEOSITE,microsoft
-- GEOSITE,archlinux
+- GEOSITE,microsoft
 - GEOIP,UA
 - GEOIP,google
 - GEOIP,cloudflare
@@ -31,3 +31,4 @@ payload:
 - DOMAIN-SUFFIX,ua
 - DOMAIN-KEYWORD,akamai
 - DOMAIN-KEYWORD,4pda
+- DOMAIN-KEYWORD,archlinux
