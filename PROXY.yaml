@@ -30,3 +30,5 @@ payload:
 - GEOIP,netflix
 - DOMAIN-SUFFIX,ua
 - DOMAIN-KEYWORD,akamai
+- DOMAIN-KEYWORD,habr
+- DOMAIN-KEYWORD,4pda
