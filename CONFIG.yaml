@@ -59,7 +59,7 @@ geox-url:
   asn: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb
 tun:
   enable: true
-  stack: system
+  stack: mixed
   dns-hijack:
   - any:53
   auto-route: true
