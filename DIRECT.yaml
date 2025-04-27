@@ -2,8 +2,5 @@ payload:
 - GEOIP,RU
 - GEOIP,BY
 - GEOIP,private
-- DOMAIN-SUFFIX,ru
-- DOMAIN-SUFFIX,by
-- DOMAIN-SUFFIX,su
 - GEOSITE,category-ru
 - GEOSITE,reddit
