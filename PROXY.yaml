@@ -30,6 +30,7 @@ payload:
 - GEOIP,twitter
 - GEOIP,netflix
 - DOMAIN-SUFFIX,ua
+- DOMAIN-SUFFIX,4pda.to
+- DOMAIN-SUFFIX,geforcenow.com
 - DOMAIN-KEYWORD,akamai
-- DOMAIN-KEYWORD,4pda
 - DOMAIN-KEYWORD,archlinux
