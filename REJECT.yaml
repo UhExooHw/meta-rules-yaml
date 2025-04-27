@@ -3,5 +3,7 @@ payload:
 - DOMAIN-SUFFIX,mcafee.com
 - DOMAIN-SUFFIX,tns-counter.ru
 - DOMAIN-KEYWORD,kaspersky
+- DOMAIN-SUFFIX,kinoplan.ru
+- DOMAIN-SUFFIX,kinoplan.io
 - GEOSITE,category-ads-all
 - GEOSITE,win-spy
