@@ -48,7 +48,8 @@ proxies:
 rules:
 - RULE-SET,REJECT,REJECT
 - RULE-SET,DIRECT,DIRECT
-- RULE-SET,PROXY,PROXY
+- MATCH,PROXY
+## - RULE-SET,PROXY,PROXY
 geodata-mode: true
 geo-auto-update: true
 geo-update-interval: 24
@@ -59,7 +60,7 @@ geox-url:
   asn: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb
 tun:
   enable: true
-  stack: system
+  stack: mixed
   dns-hijack:
   - any:53
   auto-route: true
@@ -76,15 +77,19 @@ dns:
   enhanced-mode: redir-host
   default-nameserver:
     - '9.9.9.9'
-    - '8.8.8.8'
+    - '149.112.112.112'
   proxy-server-nameserver:
-    - '9.9.9.9#PROXY'
-    - '8.8.8.8#PROXY'
+    - 'tls://dns.switch.ch#PROXY'
+    - 'tls://dns.quad9.net#PROXY'
   nameserver:
-    - '9.9.9.9#PROXY'
-    - '8.8.8.8#PROXY'
+    - 'tls://dns.switch.ch#PROXY'
+    - 'tls://dns.quad9.net#PROXY'
 proxy-groups:
 - name: PROXY
+  type: select
+  proxies:
+  - REBULLET
+- name: GLOBAL
   type: select
   proxies:
   - REBULLET
