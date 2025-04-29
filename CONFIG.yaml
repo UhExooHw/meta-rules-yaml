@@ -78,11 +78,11 @@ dns:
     - '9.9.9.9'
     - '8.8.8.8'
   proxy-server-nameserver:
-    - 'tls://dns.quad9.net#PROXY'
-    - 'tls://dns.google#PROXY'
+    - '9.9.9.9#PROXY'
+    - '8.8.8.8#PROXY'
   nameserver:
-    - 'tls://dns.quad9.net#PROXY'
-    - 'tls://dns.google#PROXY'
+    - '9.9.9.9#PROXY'
+    - '8.8.8.8#PROXY'
 proxy-groups:
 - name: PROXY
   type: select
