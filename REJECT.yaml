@@ -9,7 +9,12 @@ payload:
 - DOMAIN,hotjar-analytics.com
 - DOMAIN,analytics.facebook.com
 - DOMAIN,ads.facebook.com
+- DOMAIN,affiliationjs.s3.amazonaws.com
+- DOMAIN,advertising-api-eu.amazon.com
+- DOMAIN,metrics1.data.hicloud.com
+- DOMAIN,metrics5.data.hicloud.com 
 - DOMAIN,static.ads-twitter.com
+- DOMAIN,amazonaax.com
 - DOMAIN,advertising.twitter.com
 - DOMAIN,appmetrica.yandex.com
 - DOMAIN,ads.reddit.com
