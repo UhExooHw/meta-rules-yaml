@@ -7,7 +7,7 @@ payload:
 - DOMAIN,ad.mail.ru
 - DOMAIN,ads.sber.ru
 - DOMAIN,adfox.ru
-- DOMAIN.ads.adfox.ru
+- DOMAIN,ads.adfox.ru
 - DOMAIN,adfox.yandex.com
 - DOMAIN,media.fastclick.net
 - DOMAIN,hotjar.com
