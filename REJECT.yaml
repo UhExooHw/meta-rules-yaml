@@ -3,6 +3,7 @@ payload:
 - GEOSITE,win-spy
 - DOMAIN-KEYWORD,kaspersky
 - DOMAIN-KEYWORD,kinoplan
+- DOMAIN,ads.vk.ru
 - DOMAIN,ads.google.com
 - DOMAIN,ad.mail.ru
 - DOMAIN,ads.sber.ru
