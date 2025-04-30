@@ -95,7 +95,6 @@ proxies:
 rules:
 - RULE-SET,REJECT,REJECT
 - RULE-SET,DIRECT,DIRECT
-## - RULE-SET,PROXY,PROXY
 - MATCH,PROXY
 
 proxy-groups:
@@ -121,13 +120,6 @@ proxy-groups:
   - "DIRECT"
 
 rule-providers:
-  PROXY:
-    type: http
-    behavior: classical
-    format: yaml
-    url: https://raw.githubusercontent.com/UhExooHw/meta-rules-yaml/refs/heads/main/PROXY.yaml
-    path: ./rebullet/proxy.yaml
-    interval: 86400
   REJECT:
     type: http
     behavior: classical
