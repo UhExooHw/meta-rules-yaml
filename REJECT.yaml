@@ -3,6 +3,15 @@ payload:
 - GEOSITE,win-spy
 - DOMAIN-KEYWORD,kaspersky
 - DOMAIN-KEYWORD,kinoplan
+- DOMAIN,adtago.s3.amazonaws.com
+- DOMAIN,claritybt.freshmarketer.com
+- DOMAIN,static.ads-twitter.com
+- DOMAIN,iot-eu-logser.realme.com
+- DOMAIN,iot-logser.realme.com
+- DOMAIN,bdapi-ads.realmemobile.com
+- DOMAIN,adsfs.oppomobile.com
+- DOMAIN,smetrics.samsung.com
+- DOMAIN,samsung-com.112.2o7.net
 - DOMAIN,tns-counter.ru
 - DOMAIN,adtag.s3.amazonaws.com
 - DOMAIN,analyticsengine.s3.amazonaws.com
