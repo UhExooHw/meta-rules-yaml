@@ -35,15 +35,21 @@ dns:
   - 'localhost'
   default-nameserver:
     - "9.9.9.9"
+    - "9.9.9.10"
     - "9.9.9.11"
   nameserver:
-    - "tls://dns.quad9.net"
-    - "tls://dns11.quad9.net"
+    - "tls://dns.switch.ch#PROXY"
+    - "tls://dns.quad9.net#PROXY"
+    - "tls://dns10.quad9.net#PROXY"
+    - "tls://dns11.quad9.net#PROXY"
   fallback:
-    - "tls://dns.quad9.net"
-    - "tls://dns11.quad9.net"
+    - "tls://dns.switch.ch#PROXY"
+    - "tls://dns.quad9.net#PROXY"
+    - "tls://dns10.quad9.net#PROXY"
+    - "tls://dns11.quad9.net#PROXY"
   direct-nameserver:
     - "9.9.9.9"
+    - "9.9.9.10"
     - "9.9.9.11"
 
 sniffer:
