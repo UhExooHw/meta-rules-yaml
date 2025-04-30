@@ -4,6 +4,8 @@ payload:
 - DOMAIN-KEYWORD,kaspersky
 - DOMAIN-KEYWORD,kinoplan
 - DOMAIN,ads.google.com
+- DOMAIN,ad.mail.ru
+- DOMAIN,ads.sber.ru
 - DOMAIN,adfox.ru
 - DOMAIN.ads.adfox.ru
 - DOMAIN,adfox.yandex.com
