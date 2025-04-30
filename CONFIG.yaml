@@ -1,98 +1,110 @@
-mixed-port: 2080
 allow-lan: true
-tcp-concurrent: true
-enable-process: true
-global-client-fingerprint: chrome
+bind-address: "*"
 mode: rule
-log-level: error
-ipv6: true
+log-level: info
+ipv6: false
 keep-alive-interval: 25
 unified-delay: false
+tcp-concurrent: true
+global-client-fingerprint: chrome
+
 profile:
   store-selected: true
   store-fake-ip: true
-sniffer:
-  enable: true
-  sniff:
-    HTTP:
-      ports:
-      - 80
-      - 8080-8880
-      override-destination: true
-    TLS:
-      ports:
-      - 443
-      - 8443
-    QUIC:
-      ports:
-      - 443
-      - 8443
-proxies:
-- flow: xtls-rprx-vision
-  name: REBULLET
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: - 
-    short-id: - 
-  server: -
-  servername: -
-  tcp-opts:
-    ip-version: dual
-  tls: true
-  type: vless
-  udp: true
-  packet-encoding: xudp
-  client-fingerprint: chrome
-  uuid: -
-rules:
-- RULE-SET,REJECT,REJECT
-- RULE-SET,DIRECT,DIRECT
-- MATCH,PROXY
-## - RULE-SET,PROXY,PROXY
+
 geodata-mode: true
-geo-auto-update: true
+geodata-loader: memconservative
 geo-update-interval: 24
 geox-url:
-  geoip: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat
-  geosite: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
-  mmdb: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb
-  asn: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb
+  geoip: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
+  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
+  asn: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
+
+dns:
+  enable: true
+  use-hosts: true
+  listen: 127.0.0.1:1053
+  ipv6: false
+  default-nameserver:
+    - "9.9.9.9"
+    - "9.9.9.11"
+  nameserver:
+    - "tls://dns.quad9.net"
+    - "tls://dns11.quad9.net"
+  fallback:
+    - "tls://dns.quad9.net"
+    - "tls://dns11.quad9.net"
+  direct-nameserver:
+    - "9.9.9.9"
+    - "9.9.9.11"
+
+
+sniffer:
+  enable: false
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+
+
 tun:
   enable: true
   stack: mixed
-  dns-hijack:
-  - any:53
   auto-route: true
+  auto-redirect: true
   auto-detect-interface: true
-  strict-route: true
+  dns-hijack:
+    - any:53
+    - tcp://any:53
+  device: utun0
   mtu: 1500
-dns:
-  enable: true
-  prefer-h3: true
-  use-hosts: true
-  use-system-hosts: true
-  listen: 127.0.0.1:6868
-  ipv6: true
-  enhanced-mode: redir-host
-  default-nameserver:
-    - '9.9.9.9'
-    - '149.112.112.112'
-  proxy-server-nameserver:
-    - 'tls://dns.switch.ch#PROXY'
-    - 'tls://dns.quad9.net#PROXY'
-  nameserver:
-    - 'tls://dns.switch.ch#PROXY'
-    - 'tls://dns.quad9.net#PROXY'
+  strict-route: true
+
+proxies:
+- name: "REBULLET"
+  type: vless
+  server: ""
+  port: 443
+  udp: true
+  uuid: ""
+  flow: xtls-rprx-vision
+  packet-encoding: xudp
+  tls: true
+  servername: ""
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "j"
+    short-id: ""
+  network: tcp
+  smux:
+    enabled: false
+
+rules:
+- RULE-SET,REJECT,REJECT
+- RULE-SET,DIRECT,DIRECT
+- RULE-SET,PROXY,PROXY
+- MATCH,PROXY
+
 proxy-groups:
-- name: PROXY
+- name: "PROXY"
   type: select
   proxies:
-  - REBULLET
-- name: GLOBAL
+  - "REBULLET"
+  - "DIRECT"
+- name: "GLOBAL"
   type: select
   proxies:
-  - REBULLET
+  - "REBULLET"
+  - "DIRECT"
+
 rule-providers:
   PROXY:
     type: http
