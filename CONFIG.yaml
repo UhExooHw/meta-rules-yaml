@@ -99,13 +99,23 @@ rules:
 - MATCH,PROXY
 
 proxy-groups:
-- name: "PROXY"
-  type: select
+- name: 'PROXY'
+  type: 'select'
+  url: 'http://connectivitycheck.gstatic.com/generate_204'
+  interval: 60
+  lazy: true
+  timeout: 5000
+  max-failed-times: 2
   proxies:
   - "REBULLET"
   - "DIRECT"
-- name: "GLOBAL"
-  type: select
+- name: 'GLOBAL'
+  type: 'select'
+  url: 'http://connectivitycheck.gstatic.com/generate_204'
+  interval: 60
+  lazy: true
+  timeout: 5000
+  max-failed-times: 2
   proxies:
   - "REBULLET"
   - "DIRECT"
