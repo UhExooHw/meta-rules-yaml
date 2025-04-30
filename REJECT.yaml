@@ -4,6 +4,9 @@ payload:
 - DOMAIN-KEYWORD,kaspersky
 - DOMAIN-KEYWORD,kinoplan
 - DOMAIN,ads.google.com
+- DOMAIN,adfox.ru
+- DOMAIN.ads.adfox.ru
+- DOMAIN,adfox.yandex.com
 - DOMAIN,media.fastclick.net
 - DOMAIN,hotjar.com
 - DOMAIN,hotjar-analytics.com
