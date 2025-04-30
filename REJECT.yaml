@@ -1,9 +1,6 @@
 payload:
-- DOMAIN-SUFFIX,avast.com
-- DOMAIN-SUFFIX,mcafee.com
-- DOMAIN-SUFFIX,tns-counter.ru
+- DOMAIN-KEYWORD,tns-counter
 - DOMAIN-KEYWORD,kaspersky
-- DOMAIN-SUFFIX,kinoplan.ru
-- DOMAIN-SUFFIX,kinoplan.io
+- DOMAIN-KEYWORD,kinoplan
 - GEOSITE,category-ads-all
 - GEOSITE,win-spy
