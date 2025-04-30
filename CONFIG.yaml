@@ -81,7 +81,7 @@ proxies:
   servername: ""
   client-fingerprint: chrome
   reality-opts:
-    public-key: "j"
+    public-key: ""
     short-id: ""
   network: tcp
   smux:
