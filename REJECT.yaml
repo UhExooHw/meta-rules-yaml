@@ -1,6 +1,7 @@
 payload:
 - GEOSITE,category-ads-all
 - GEOSITE,win-spy
+- DOMAIN,ads.google.com
 - DOMAIN-KEYWORD,kaspersky
 - DOMAIN-KEYWORD,kinoplan
 - DOMAIN,adtago.s3.amazonaws.com
