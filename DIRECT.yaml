@@ -4,3 +4,4 @@ payload:
 - GEOIP,private
 - GEOSITE,category-ru
 - GEOSITE,reddit
+- DOMAIN-SUFFIX,by
