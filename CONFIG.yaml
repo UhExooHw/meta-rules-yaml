@@ -25,7 +25,7 @@ geox-url:
 dns:
   enable: true
   use-hosts: true
-  listen: 127.0.0.1:1053
+  listen: 0.0.0.0:53
   ipv6: false
   default-nameserver:
     - "9.9.9.9"
