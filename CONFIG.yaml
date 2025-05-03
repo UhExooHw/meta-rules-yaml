@@ -63,13 +63,14 @@ sniffer:
 
 tun:
   enable: true
-  stack: gvisor
+  stack: system
   auto-route: true
   auto-redirect: true
   auto-detect-interface: true
   dns-hijack:
     - any:53
     - tcp://any:53
+    - udp://any:53
   device: utun0
   mtu: 1500
   strict-route: true
