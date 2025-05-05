@@ -2,7 +2,7 @@ mixed-port: 10807
 allow-lan: true
 bind-address: "*"
 mode: rule
-log-level: info
+log-level: error
 ipv6: true
 global-client-fingerprint: chrome
 
@@ -26,30 +26,20 @@ dns:
   ipv6: true
   default-nameserver:
     - "9.9.9.9"
-    - "9.9.9.10"
     - "9.9.9.11"
-    - "[2620:fe::fe]:53"
     - "[2620:fe::9]:53"
     - "[2620:fe::11]:53"
-    - "[2620:fe::fe:11]:53"
   nameserver:
-    - "tls://dns.switch.ch#PROXY"
     - "tls://dns.quad9.net#PROXY"
-    - "tls://dns10.quad9.net#PROXY"
     - "tls://dns11.quad9.net#PROXY"
   fallback:
-    - "tls://dns.switch.ch#PROXY"
     - "tls://dns.quad9.net#PROXY"
-    - "tls://dns10.quad9.net#PROXY"
     - "tls://dns11.quad9.net#PROXY"
   direct-nameserver:
     - "9.9.9.9"
-    - "9.9.9.10"
     - "9.9.9.11"
-    - "[2620:fe::fe]:53"
     - "[2620:fe::9]:53"
     - "[2620:fe::11]:53"
-    - "[2620:fe::fe:11]:53"
 
 sniffer:
   enable: true
@@ -68,7 +58,7 @@ sniffer:
 
 tun:
   enable: true
-  stack: system
+  stack: gvisor
   auto-route: true
   auto-redirect: true
   auto-detect-interface: true
@@ -84,6 +74,7 @@ proxies:
   server: 127.0.0.1
   port: 10808
   udp: true
+  xudp: true
 rules:
 - RULE-SET,REJECT,REJECT
 - RULE-SET,DIRECT,DIRECT
@@ -92,21 +83,13 @@ rules:
 proxy-groups:
 - name: 'PROXY'
   type: 'select'
-  url: 'http://connectivitycheck.gstatic.com/generate_204'
   interval: 60
-  lazy: true
-  timeout: 5000
-  max-failed-times: 2
   proxies:
   - "REBULLET"
   - "DIRECT"
 - name: 'GLOBAL'
   type: 'select'
-  url: 'http://connectivitycheck.gstatic.com/generate_204'
   interval: 60
-  lazy: true
-  timeout: 5000
-  max-failed-times: 2
   proxies:
   - "REBULLET"
   - "DIRECT"
@@ -118,11 +101,11 @@ rule-providers:
     format: yaml
     url: https://raw.githubusercontent.com/UhExooHw/meta-rules-yaml/refs/heads/main/REJECT.yaml
     path: ./rebullet/reject.yaml
-    interval: 86400
+    interval: 1440
   DIRECT:
     type: http
     behavior: classical
     format: yaml
     url: https://raw.githubusercontent.com/UhExooHw/meta-rules-yaml/refs/heads/main/DIRECT.yaml
     path: ./rebullet/direct.yaml
-    interval: 86400
+    interval: 1440
