@@ -1,6 +1,4 @@
 payload:
-- GEOIP,RU
-- GEOIP,BY
 - GEOIP,private
 - GEOSITE,category-ru
 - GEOSITE,reddit
