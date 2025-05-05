@@ -83,13 +83,46 @@ proxies:
   type: socks5
   server: 127.0.0.1
   port: 10808
+  
+rules:
+- RULE-SET,REJECT,REJECT
+- RULE-SET,DIRECT,DIRECT
+- MATCH,PROXY
 
 proxy-groups:
-- name: 'GLOBAL'
+- name: 'PROXY'
   type: 'select'
   url: 'http://connectivitycheck.gstatic.com/generate_204'
   interval: 60
+  lazy: true
   timeout: 5000
   max-failed-times: 2
   proxies:
   - "REBULLET"
+  - "DIRECT"
+- name: 'GLOBAL'
+  type: 'select'
+  url: 'http://connectivitycheck.gstatic.com/generate_204'
+  interval: 60
+  lazy: true
+  timeout: 5000
+  max-failed-times: 2
+  proxies:
+  - "REBULLET"
+  - "DIRECT"
+
+rule-providers:
+  REJECT:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/UhExooHw/meta-rules-yaml/refs/heads/main/REJECT.yaml
+    path: ./rebullet/reject.yaml
+    interval: 86400
+  DIRECT:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/UhExooHw/meta-rules-yaml/refs/heads/main/DIRECT.yaml
+    path: ./rebullet/direct.yaml
+    interval: 86400
