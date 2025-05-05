@@ -1,12 +1,9 @@
-mixed-port: 7890
+mixed-port: 10807
 allow-lan: true
 bind-address: "*"
 mode: rule
 log-level: info
-ipv6: false
-keep-alive-interval: 25
-unified-delay: false
-tcp-concurrent: true
+ipv6: true
 global-client-fingerprint: chrome
 
 profile:
@@ -26,11 +23,15 @@ dns:
   enable: true
   use-hosts: true
   listen: 0.0.0.0:1053
-  ipv6: false
+  ipv6: true
   default-nameserver:
     - "9.9.9.9"
     - "9.9.9.10"
     - "9.9.9.11"
+    - "[2620:fe::fe]:53"
+    - "[2620:fe::9]:53"
+    - "[2620:fe::11]:53"
+    - "[2620:fe::fe:11]:53"
   nameserver:
     - "tls://dns.switch.ch#PROXY"
     - "tls://dns.quad9.net#PROXY"
@@ -45,6 +46,10 @@ dns:
     - "9.9.9.9"
     - "9.9.9.10"
     - "9.9.9.11"
+    - "[2620:fe::fe]:53"
+    - "[2620:fe::9]:53"
+    - "[2620:fe::11]:53"
+    - "[2620:fe::fe:11]:53"
 
 sniffer:
   enable: true
@@ -63,37 +68,23 @@ sniffer:
 
 tun:
   enable: true
-  stack: system
+  stack: mixed
   auto-route: true
   auto-redirect: true
   auto-detect-interface: true
   dns-hijack:
     - any:53
-    - tcp://any:53
-    - udp://any:53
   device: utun0
   mtu: 1500
   strict-route: true
 
 proxies:
 - name: "REBULLET"
-  type: vless
-  server: ""
-  port: 443
-  udp: true
-  uuid: ""
-  flow: xtls-rprx-vision
-  packet-encoding: xudp
-  tls: true
-  servername: ""
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ""
-    short-id: ""
-  network: tcp
-  smux:
-    enabled: false
-
+- name: "socks"
+  type: socks5
+  server: 127.0.0.1
+  port: 10808
+  
 rules:
 - RULE-SET,REJECT,REJECT
 - RULE-SET,DIRECT,DIRECT
