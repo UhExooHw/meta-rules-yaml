@@ -80,7 +80,6 @@ tun:
 
 proxies:
 - name: "REBULLET"
-- name: "socks"
   type: socks5
   server: 127.0.0.1
   port: 10808
