@@ -5,7 +5,7 @@ lan-allowed-ips:
   - ::/0
 bind-address: "*"
 mode: rule
-log-level: error
+log-level: info
 ipv6: true
 global-client-fingerprint: chrome
 
@@ -25,8 +25,7 @@ geox-url:
 dns:
   enable: true
   use-hosts: true
-  prefer-h3: true
-  listen: 0.0.0.0:1053
+  listen: :1053
   ipv6: true
   default-nameserver:
     - "9.9.9.9"
