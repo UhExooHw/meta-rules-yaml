@@ -1,5 +1,8 @@
 mixed-port: 10807
 allow-lan: true
+lan-allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
 bind-address: "*"
 mode: rule
 log-level: error
