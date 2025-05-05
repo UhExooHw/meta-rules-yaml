@@ -83,7 +83,7 @@ proxies:
   type: socks5
   server: 127.0.0.1
   port: 10808
-  
+  udp: true
 rules:
 - RULE-SET,REJECT,REJECT
 - RULE-SET,DIRECT,DIRECT
