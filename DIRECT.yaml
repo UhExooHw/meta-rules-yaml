@@ -1,7 +1,6 @@
 payload:
 - GEOIP,private
 - GEOSITE,category-ru
-- GEOSITE,reddit
 - DOMAIN-SUFFIX,by
 - DOMAIN-SUFFIX,xn--90ais
 - DOMAIN,www.rebullet.ch
