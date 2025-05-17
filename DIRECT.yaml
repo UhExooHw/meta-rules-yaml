@@ -1,6 +1,2 @@
 payload:
 - GEOIP,private
-- GEOSITE,category-ru
-- DOMAIN-SUFFIX,by
-- DOMAIN-SUFFIX,xn--90ais
-- DOMAIN-KEYWORD,avito
