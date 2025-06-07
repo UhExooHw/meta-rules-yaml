@@ -1,2 +1,3 @@
 payload:
 - GEOIP,private
+- GEOSITE,category-ru
