@@ -1,3 +1,4 @@
 payload:
 - GEOIP,private
 - GEOSITE,category-ru
+- DOMAIN-KEYWORD,hiddenpalace.org
