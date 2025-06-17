@@ -6,6 +6,7 @@ payload:
 - DOMAIN-KEYWORD,2gis
 - DOMAIN,ads.mozilla.org
 - DOMAIN,incoming.telemetry.mozilla.org
+- DOMAIN,location.services.mozilla.com
 - DOMAIN,ads.vk.ru
 - DOMAIN-SUFFIX,ad-tech.ru
 - DOMAIN,err.lenta.ru
