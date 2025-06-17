@@ -4,7 +4,6 @@ payload:
 - DOMAIN-KEYWORD,kaspersky
 - DOMAIN-KEYWORD,kinoplan
 - DOMAIN-KEYWORD,2gis
-- DOMAIN-KEYWORD,yandex
 - DOMAIN,ads.vk.ru
 - DOMAIN-SUFFIX,ad-tech.ru
 - DOMAIN,err.lenta.ru
