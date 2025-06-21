@@ -1,3 +1,5 @@
 payload:
     - DOMAIN-KEYWORD,torproject
     - DOMAIN-SUFFIX,onion
+    - GEOSITE,protonmail
+    - GEOSITE,duckduckgo
