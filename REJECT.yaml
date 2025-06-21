@@ -194,3 +194,4 @@ payload:
     - DOMAIN,detectportal.firefox.com
     - DOMAIN,spocs.getpocket.com
     - DOMAIN,contile-images.services.mozilla.com
+    - DOMAIN,push.services.mozilla.com
