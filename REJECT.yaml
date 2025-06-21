@@ -191,3 +191,5 @@ payload:
     - DOMAIN,www.proanonimnost.ru
     - DOMAIN,xapi.ozon.ru
     - DOMAIN,detectportal.firefox.com
+    - DOMAIN,spocs.getpocket.com
+    - DOMAIN,contile-images.services.mozilla.com
