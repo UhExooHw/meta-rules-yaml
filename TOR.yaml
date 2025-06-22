@@ -4,4 +4,5 @@ payload:
     - GEOSITE,protonmail
     - GEOSITE,duckduckgo
     - DST-PORT,9050
+    - DST-PORT,9100
     - DST-PORT,9150
