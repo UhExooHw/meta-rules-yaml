@@ -3,5 +3,4 @@ payload:
     - DOMAIN-SUFFIX,onion
     - GEOSITE,protonmail
     - GEOSITE,duckduckgo
-    - GEOSITE,bbc
     - DOMAIN,ahmia.fi
