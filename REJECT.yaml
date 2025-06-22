@@ -5,11 +5,14 @@ payload:
     - DOMAIN-KEYWORD,kaspersky
     - DOMAIN-KEYWORD,kinoplan
     - DOMAIN-KEYWORD,2gis
+    - DOMAIN-SUFFIX,ad-tech.ru
+    - DOMAIN-SUFFIX,vk-analytics.ru
+    - DOMAIN-SUFFIX,appmetrica.yandex.net
+    - DOMAIN-SUFFIX,startup.mobile.yandex.net
     - DOMAIN,ads.mozilla.org
     - DOMAIN,incoming.telemetry.mozilla.org
     - DOMAIN,location.services.mozilla.com
     - DOMAIN,ads.vk.ru
-    - DOMAIN-SUFFIX,ad-tech.ru
     - DOMAIN,err.lenta.ru
     - DOMAIN,ads.google.com
     - DOMAIN,ad.mail.ru
@@ -195,3 +198,7 @@ payload:
     - DOMAIN,spocs.getpocket.com
     - DOMAIN,contile-images.services.mozilla.com
     - DOMAIN,push.services.mozilla.com
+    - DOMAIN,firebaselogging-pa.googleapis.com
+    - DOMAIN,firebase-settings.crashlytics.com
+    - DOMAIN,firebaseinstallations.googleapis.com
+    - DOMAIN,firebaseremoteconfig.googleapis.com
