@@ -5,8 +5,10 @@ payload:
     - DOMAIN-KEYWORD,kaspersky
     - DOMAIN-KEYWORD,kinoplan
     - DOMAIN-KEYWORD,2gis
-    - DOMAIN-SUFFIX,ad-tech.ru
-    - DOMAIN-SUFFIX,vk-analytics.ru
+    - DOMAIN-KEYWORD,ad-tech
+    - DOMAIN-KEYWORD,vk-analytics
+    - DOMAIN-KEYWORD,appsflyersdk
+    - DOMAIN-KEYWORD,apptracer
     - DOMAIN-SUFFIX,appmetrica.yandex.net
     - DOMAIN-SUFFIX,startup.mobile.yandex.net
     - DOMAIN,ads.mozilla.org
