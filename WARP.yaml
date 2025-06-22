@@ -1,5 +1,7 @@
 payload:
     - DOMAIN-SUFFIX,by
+    - DOMAIN-SUFFIX,st
+    - DOMAIN-SUFFIX,ua
     - DOMAIN-SUFFIX,xn--90ais
     - DOMAIN-SUFFIX,xn--j1amh
     - GEOSITE,category-ru
