@@ -3,4 +3,5 @@ payload:
     - DOMAIN-SUFFIX,onion
     - GEOSITE,protonmail
     - GEOSITE,duckduckgo
-    - DOMAIN,ahmia.fi
+    - DST-PORT,9050
+    - DST-PORT,9150
