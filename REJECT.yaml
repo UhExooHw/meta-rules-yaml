@@ -204,3 +204,4 @@ payload:
     - DOMAIN,firebase-settings.crashlytics.com
     - DOMAIN,firebaseinstallations.googleapis.com
     - DOMAIN,firebaseremoteconfig.googleapis.com
+    - DOMAIN,www.msftconnecttest.com
