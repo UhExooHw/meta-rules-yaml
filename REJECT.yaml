@@ -242,3 +242,17 @@ payload:
     - DOMAIN,config.edge.skype.com
     - DOMAIN,config.teams.microsoft.com
     - DOMAIN,teams.events.data.microsoft.com
+    - DOMAIN,activity.windows.com
+    - DOMAIN,assets.activity.windows.com
+    - DOMAIN,query.prod.cms.rt.microsoft.com
+    - DOMAIN,g.msn.com.nsatc.net
+    - DOMAIN,nexusrules.officeapps.live.com
+    - DOMAIN,substrate.office.com
+    - DOMAIN,edge.skype.com
+    - DOMAIN,experimental-api.asm.skype.com
+    - DOMAIN,trouter-azsc-ukwe-0-b.trouter.skype.com
+    - DOMAIN,cs.dds.microsoft.com,
+    - DOMAIN,wallet.microsoft.com
+    - DOMAIN,mediaredirect.microsoft.com
+    - DOMAIN,int.whiteboard.microsoft.com
+    - DOMAIN,whiteboard.ms
