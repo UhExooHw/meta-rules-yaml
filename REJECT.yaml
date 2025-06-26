@@ -256,3 +256,8 @@ payload:
     - DOMAIN,mediaredirect.microsoft.com
     - DOMAIN,int.whiteboard.microsoft.com
     - DOMAIN,whiteboard.ms
+    - DOMAIN,connectivitycheck.android.com
+    - DOMAIN,firebaselogging.googleapis.com
+    - DOMAIN,crashlytics.com
+    - DOMAIN,app-measurement.com
+    
