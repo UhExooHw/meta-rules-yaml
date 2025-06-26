@@ -11,6 +11,7 @@ payload:
     - DOMAIN-KEYWORD,apptracer
     - DOMAIN-SUFFIX,appmetrica.yandex.net
     - DOMAIN-SUFFIX,startup.mobile.yandex.net
+    - DOMAIN-SUFFIX,smartscreen.microsoft.com
     - DOMAIN,ads.mozilla.org
     - DOMAIN,incoming.telemetry.mozilla.org
     - DOMAIN,location.services.mozilla.com
@@ -210,3 +211,4 @@ payload:
     - DOMAIN,connectivitycheck.gstatic.com
     - DOMAIN,captive.apple.com
     - DOMAIN,networkcheck.kde.org
+    - DOMAIN,checkappexec.microsoft.com
