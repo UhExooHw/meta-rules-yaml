@@ -261,4 +261,4 @@ payload:
     - DOMAIN,firebaselogging.googleapis.com
     - DOMAIN,crashlytics.com
     - DOMAIN,app-measurement.com
-    
+    - DOMAIN,ecs.office.com
