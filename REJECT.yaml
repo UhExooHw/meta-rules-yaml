@@ -205,3 +205,8 @@ payload:
     - DOMAIN,firebaseinstallations.googleapis.com
     - DOMAIN,firebaseremoteconfig.googleapis.com
     - DOMAIN,www.msftconnecttest.com
+    - DOMAIN,cp.cloudflare.com
+    - DOMAIN,msftncsi.com
+    - DOMAIN,connectivitycheck.gstatic.com
+    - DOMAIN,captive.apple.com
+    - DOMAIN,networkcheck.kde.org
