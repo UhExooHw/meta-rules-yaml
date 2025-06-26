@@ -262,3 +262,5 @@ payload:
     - DOMAIN,crashlytics.com
     - DOMAIN,app-measurement.com
     - DOMAIN,ecs.office.com
+    - DOMAIN,cxcs.microsoft.net
+    - DOMAIN,ris.api.iris.microsoft.com
