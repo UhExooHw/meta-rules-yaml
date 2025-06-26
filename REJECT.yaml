@@ -1,4 +1,5 @@
 payload:
+    - IP-CIDR6,::/0
     - GEOSITE,category-ads-all
     - GEOSITE,win-spy
     - GEOSITE,category-porn
