@@ -595,3 +595,5 @@ payload:
     - DOMAIN-SUFFIX,modern.watson.data.microsoft.com.akadns.net
     - DOMAIN-SUFFIX,asimov-win.settings.data.microsoft.com.akadns.net
     - DOMAIN,nvda.d2.sc.omtrdc.net
+    - DOMAIN,improving.duckduckgo.com
+    - DOMAIN,collector.github.com
