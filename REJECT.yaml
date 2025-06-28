@@ -211,7 +211,6 @@ payload:
     - DOMAIN,connectivitycheck.gstatic.com
     - DOMAIN,captive.apple.com
     - DOMAIN,networkcheck.kde.org
-    - DOMAIN,checkappexec.microsoft.com
     - DOMAIN-SUFFIX,events.data.microsoft.com
     - DOMAIN-SUFFIX,telemetry.microsoft.com
     - DOMAIN-SUFFIX,data.microsoft.com
