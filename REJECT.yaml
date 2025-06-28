@@ -10,12 +10,14 @@ payload:
     - DOMAIN-KEYWORD,vk-analytics
     - DOMAIN-KEYWORD,appsflyersdk
     - DOMAIN-KEYWORD,apptracer
+    - DOMAIN-SUFFIX,smartscreen-prod.microsoft.com
     - DOMAIN-SUFFIX,appmetrica.yandex.net
     - DOMAIN-SUFFIX,startup.mobile.yandex.net
     - DOMAIN,ads.mozilla.org
     - DOMAIN,incoming.telemetry.mozilla.org
     - DOMAIN,location.services.mozilla.com
     - DOMAIN,ads.vk.ru
+    - DOMAIN,checkappexec.microsoft.com
     - DOMAIN,err.lenta.ru
     - DOMAIN,ads.google.com
     - DOMAIN,ad.mail.ru
