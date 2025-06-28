@@ -599,3 +599,5 @@ payload:
     - DOMAIN,collector.github.com
     - DOMAIN,adservings.ru
     - DOMAIN,analytics.tiktok.com
+    - DOMAIN,telemetry.dzen.ru
+    - DOMAIN,trk.mail.ru
