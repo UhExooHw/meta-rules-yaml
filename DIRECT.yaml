@@ -3,3 +3,5 @@ payload:
     - DOMAIN-SUFFIX,st
     - DOMAIN-SUFFIX,xn--90ais
     - GEOSITE,category-ru
+    - DOMAIN-KEYWORD,sberbank
+    - DOMAIN-KEYWORD,sber-bank
