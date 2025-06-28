@@ -601,3 +601,5 @@ payload:
     - DOMAIN,analytics.tiktok.com
     - DOMAIN,telemetry.dzen.ru
     - DOMAIN,trk.mail.ru
+    - DOMAIN,reklama.mail.ru
+    - DOMAIN,telemetry.dzen.ru
