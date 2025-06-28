@@ -268,3 +268,4 @@ payload:
     - DOMAIN,prod.otel.kaizen.nvidia.com
     - DOMAIN,events.gfe.nvidia.com
     - DOMAIN,gx-target-experiments-frontend-api.gx.nvidia.com
+    - DOMAIN,telemetry.gfe.nvidia.com
