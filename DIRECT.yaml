@@ -5,5 +5,5 @@ payload:
     - GEOSITE,category-ru
     - DOMAIN-KEYWORD,sberbank
     - DOMAIN-KEYWORD,sber-bank
+    - DOMAIN,am-west.gcs.geforcenow.nvidiagrid.net
     - AND,((DOMAIN-KEYWORD,nvidiagrid),(NETWORK,UDP))
-    - AND,((DOMAIN,am-west.gcs.geforcenow.nvidiagrid.net),(NETWORK,UDP))
