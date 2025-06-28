@@ -265,3 +265,6 @@ payload:
     - DOMAIN,cxcs.microsoft.net
     - DOMAIN,ris.api.iris.microsoft.com
     - DOMAIN,feedback-pa.clients6.google.com
+    - DOMAIN,prod.otel.kaizen.nvidia.com
+    - DOMAIN,events.gfe.nvidia.com
+    - DOMAIN,gx-target-experiments-frontend-api.gx.nvidia.com
