@@ -603,3 +603,4 @@ payload:
     - DOMAIN,trk.mail.ru
     - DOMAIN,reklama.mail.ru
     - DOMAIN,telemetry.dzen.ru
+    - DOMAIN,ts.tracker-api.my.com
