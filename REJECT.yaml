@@ -604,3 +604,4 @@ payload:
     - DOMAIN,reklama.mail.ru
     - DOMAIN,telemetry.dzen.ru
     - DOMAIN-SUFFIX,tracker-api.my.com
+    - DOMAIN-SUFFIX,mp.microsoft.com
