@@ -1,9 +1,9 @@
 payload:
     - DOMAIN-SUFFIX,by
-    - DOMAIN-SUFFIX,st
     - DOMAIN-SUFFIX,xn--90ais
     - GEOSITE,category-ru
     - DOMAIN-KEYWORD,sberbank
     - DOMAIN-KEYWORD,sber-bank
     - DOMAIN,am-west.gcs.geforcenow.nvidiagrid.net
     - AND,((DOMAIN-KEYWORD,nvidiagrid),(NETWORK,UDP))
+    - DOMAIN-SUFFIX,avito.st
