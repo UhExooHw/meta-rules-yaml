@@ -605,3 +605,10 @@ payload:
     - DOMAIN,telemetry.dzen.ru
     - DOMAIN-SUFFIX,tracker-api.my.com
     - DOMAIN-SUFFIX,mp.microsoft.com
+    - DOMAIN,z-p42.graph.instagram.com
+    - DOMAIN,portal.mail.ru
+    - DOMAIN,cspreport.mail.ru
+    - DOMAIN,rs.mail.ru
+    - DOMAIN,r3.mail.ru
+    - DOMAIN,xray.mail.ru
+    - DOMAIN,c.aps.amazon-adsystem.com
