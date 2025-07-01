@@ -617,3 +617,4 @@ payload:
     - DOMAIN,googletagmanager.com #discord web: ads
     - DOMAIN,hubspotonwebflow.com #discord web: tech information
     - DOMAIN,sentry.io #discord web: tech information
+    - DOMAIN-SUFFIX,cookiepro.com
