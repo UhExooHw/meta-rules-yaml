@@ -1,4 +1,5 @@
 payload:
+    - GEOIP,private
     - DOMAIN-SUFFIX,by
     - DOMAIN-SUFFIX,xn--90ais
     - GEOSITE,category-ru
