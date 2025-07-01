@@ -613,7 +613,7 @@ payload:
     - DOMAIN,xray.mail.ru
     - DOMAIN,c.aps.amazon-adsystem.com
     - DOMAIN,log.strm.yandex.ru
-    - DOMAIN,geolocation.onetrust.com
-    - DOMAIN,googletagmanager.com
-    - DOMAIN,hubspotonwebflow.com
-    - DOMAIN,sentry.io
+    - DOMAIN,geolocation.onetrust.com #discord web: geo cookie manager
+    - DOMAIN,googletagmanager.com #discord web: ads
+    - DOMAIN,hubspotonwebflow.com #discord web: tech information
+    - DOMAIN,sentry.io #discord web: tech information
