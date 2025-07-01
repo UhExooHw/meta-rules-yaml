@@ -612,3 +612,4 @@ payload:
     - DOMAIN,r3.mail.ru
     - DOMAIN,xray.mail.ru
     - DOMAIN,c.aps.amazon-adsystem.com
+    - DOMAIN,log.strm.yandex.ru
