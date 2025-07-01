@@ -624,3 +624,4 @@ payload:
     - DOMAIN,pixel-static.spotify.com
     - DOMAIN,pixel.spotify.com
     - DOMAIN,client-metrics.discordapp.net
+    - DOMAIN-SUFFIX,hawk.so
