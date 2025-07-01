@@ -619,3 +619,4 @@ payload:
     - DOMAIN,sentry.io #discord web: tech information
     - DOMAIN-SUFFIX,cookiepro.com
     - DOMAIN-SUFFIX,mixpanel.com
+    - DOMAIN-SUFFIX,split.io
