@@ -620,3 +620,6 @@ payload:
     - DOMAIN-SUFFIX,cookiepro.com
     - DOMAIN-SUFFIX,mixpanel.com
     - DOMAIN-SUFFIX,split.io
+    - DOMAIN-SUFFIX,branch.io
+    - DOMAIN,pixel-static.spotify.com
+    - DOMAIN,pixel.spotify.com
