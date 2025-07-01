@@ -618,3 +618,4 @@ payload:
     - DOMAIN,hubspotonwebflow.com #discord web: tech information
     - DOMAIN,sentry.io #discord web: tech information
     - DOMAIN-SUFFIX,cookiepro.com
+    - DOMAIN-SUFFIX,mixpanel.com
