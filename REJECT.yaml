@@ -623,3 +623,4 @@ payload:
     - DOMAIN-SUFFIX,branch.io
     - DOMAIN,pixel-static.spotify.com
     - DOMAIN,pixel.spotify.com
+    - DOMAIN,client-metrics.discordapp.net
