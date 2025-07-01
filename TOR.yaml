@@ -3,6 +3,6 @@ payload:
     - DOMAIN-SUFFIX,onion
     - GEOSITE,protonmail
     - GEOSITE,duckduckgo
-    - DST-PORT,9050
-    - DST-PORT,9100
-    - DST-PORT,9150
+    - IN-PORT,9050
+    - IN-PORT,9100
+    - IN-PORT,9150
