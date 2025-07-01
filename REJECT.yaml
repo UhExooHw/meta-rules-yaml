@@ -613,3 +613,5 @@ payload:
     - DOMAIN,xray.mail.ru
     - DOMAIN,c.aps.amazon-adsystem.com
     - DOMAIN,log.strm.yandex.ru
+    - DOMAIN,geolocation.onetrust.com
+    - DOMAIN,googletagmanager.com
