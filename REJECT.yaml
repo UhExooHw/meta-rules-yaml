@@ -615,3 +615,5 @@ payload:
     - DOMAIN,log.strm.yandex.ru
     - DOMAIN,geolocation.onetrust.com
     - DOMAIN,googletagmanager.com
+    - DOMAIN,hubspotonwebflow.com
+    - DOMAIN,sentry.io
