@@ -11,6 +11,7 @@ payload:
     - DOMAIN-KEYWORD,apptracer
     - DOMAIN-SUFFIX,smartscreen-prod.microsoft.com
     - DOMAIN-SUFFIX,appmetrica.yandex.net
+    - DOMAIN-SUFFIX,adfox.ru
     - DOMAIN-SUFFIX,startup.mobile.yandex.net
     - DOMAIN,ads.mozilla.org
     - DOMAIN,incoming.telemetry.mozilla.org
@@ -21,8 +22,6 @@ payload:
     - DOMAIN,ads.google.com
     - DOMAIN,ad.mail.ru
     - DOMAIN,ads.sber.ru
-    - DOMAIN,adfox.ru
-    - DOMAIN,ads.adfox.ru
     - DOMAIN,adfox.yandex.com
     - DOMAIN,media.fastclick.net
     - DOMAIN,hotjar.com
