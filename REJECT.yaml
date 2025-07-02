@@ -1,6 +1,7 @@
 payload:
     - IP-CIDR6,::/0
     - GEOSITE,category-ads-all
+    - GEOSITE,category-porn
     - GEOSITE,win-spy
     - DOMAIN-KEYWORD,kaspersky
     - DOMAIN-KEYWORD,kinoplan
