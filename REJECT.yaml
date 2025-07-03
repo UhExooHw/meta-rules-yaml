@@ -310,3 +310,7 @@ payload:
     - DOMAIN,contile-images.services.mozilla.com
     - DOMAIN,spocs.getpocket.com
     - DOMAIN,darkreader.org
+    - DOMAIN,usage-ping.brave.com
+    - DOMAIN,brave-core-ext.s3.brave.com
+    - DOMAIN,redirector.brave.com
+    - DOMAIN,star-randsrv.bsg.brave.com
