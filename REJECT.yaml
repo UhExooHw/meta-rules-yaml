@@ -300,3 +300,12 @@ payload:
     - DOMAIN,client-metrics.discordapp.net
     - DOMAIN-SUFFIX,hawk.so
     - DOMAIN-SUFFIX,wdcp.microsoft.com
+    - DOMAIN,firefox.settings.services.mozilla.com
+    - DOMAIN,firefox-settings-attachments.cdn.mozilla.net
+    - DOMAIN,content-signature-2.cdn.mozilla.net
+    - DOMAIN,accounts.firefox.com
+    - DOMAIN,profile.accounts.firefox.com
+    - DOMAIN,token.services.mozilla.com
+    - DOMAIN,sync-1-us-west1-g.sync.services.mozilla.com
+    - DOMAIN,contile-images.services.mozilla.com
+    - DOMAIN,spocs.getpocket.com
