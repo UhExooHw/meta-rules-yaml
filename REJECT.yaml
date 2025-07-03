@@ -318,3 +318,4 @@ payload:
     - DOMAIN,variations.brave.com
     - DOMAIN,quorum.wdp.brave.com
     - DOMAIN,p3a-json.brave.com
+    - DOMAIN,ct.pinterest.com
