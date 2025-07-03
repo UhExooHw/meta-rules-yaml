@@ -12,6 +12,8 @@ payload:
     - DOMAIN-KEYWORD,apptracer
     - DOMAIN-KEYWORD,torrent-igruha
     - DOMAIN-KEYWORD,torrent
+    - DOMAIN-KEYWORD,rutracker
+    - DOMAIN-KEYWORD,tlauncher
     - DOMAIN-SUFFIX,smartscreen-prod.microsoft.com
     - DOMAIN-SUFFIX,appmetrica.yandex.net
     - DOMAIN-SUFFIX,adfox.ru
