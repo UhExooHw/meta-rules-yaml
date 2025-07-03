@@ -315,4 +315,4 @@ payload:
     - DOMAIN,redirector.brave.com
     - DOMAIN,star-randsrv.bsg.brave.com
     - DOMAIN,go-updater.brave.com #not update server
-
+    - DOMAIN,variations.brave.com
