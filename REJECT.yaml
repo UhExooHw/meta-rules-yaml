@@ -309,3 +309,4 @@ payload:
     - DOMAIN,sync-1-us-west1-g.sync.services.mozilla.com
     - DOMAIN,contile-images.services.mozilla.com
     - DOMAIN,spocs.getpocket.com
+    - DOMAIN,darkreader.org
