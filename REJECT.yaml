@@ -10,6 +10,8 @@ payload:
     - DOMAIN-KEYWORD,vk-analytics
     - DOMAIN-KEYWORD,appsflyersdk
     - DOMAIN-KEYWORD,apptracer
+    - DOMAIN-KEYWORD,torrent-igruha
+    - DOMAIN-KEYWORD,torrent
     - DOMAIN-SUFFIX,smartscreen-prod.microsoft.com
     - DOMAIN-SUFFIX,appmetrica.yandex.net
     - DOMAIN-SUFFIX,adfox.ru
