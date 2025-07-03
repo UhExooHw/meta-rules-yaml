@@ -314,3 +314,5 @@ payload:
     - DOMAIN,brave-core-ext.s3.brave.com
     - DOMAIN,redirector.brave.com
     - DOMAIN,star-randsrv.bsg.brave.com
+    - DOMAIN,go-updater.brave.com #not update server
+
