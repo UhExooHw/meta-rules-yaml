@@ -290,7 +290,7 @@ payload:
     - DOMAIN,geolocation.onetrust.com #discord web: geo cookie manager
     - DOMAIN,googletagmanager.com #discord web: ads
     - DOMAIN,hubspotonwebflow.com #discord web: tech information
-    - DOMAIN-SUFFIX,sentry.io
+    - DOMAIN-SUFFIX,sentry.io #discord web: tech information
     - DOMAIN-SUFFIX,cookiepro.com
     - DOMAIN-SUFFIX,mixpanel.com
     - DOMAIN-SUFFIX,split.io
