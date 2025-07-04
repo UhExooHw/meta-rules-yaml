@@ -322,3 +322,4 @@ payload:
     - DOMAIN,quorum.wdp.brave.com
     - DOMAIN,p3a-json.brave.com
     - DOMAIN,ct.pinterest.com
+    - DOMAIN,rutracker.net
