@@ -3,6 +3,9 @@ payload:
     - GEOSITE,category-ads-all
     - GEOSITE,category-porn
     - GEOSITE,win-spy
+    - GEOSITE,category-public-tracker
+    - GEOSITE,tracker
+    - GEOSITE,rutracker
     - DOMAIN-KEYWORD,kaspersky
     - DOMAIN-KEYWORD,kinoplan
     - DOMAIN-KEYWORD,2gis
@@ -10,7 +13,6 @@ payload:
     - DOMAIN-KEYWORD,vk-analytics
     - DOMAIN-KEYWORD,appsflyersdk
     - DOMAIN-KEYWORD,apptracer
-    - DOMAIN-KEYWORD,torrent
     - DOMAIN-SUFFIX,smartscreen-prod.microsoft.com
     - DOMAIN-SUFFIX,appmetrica.yandex.net
     - DOMAIN-SUFFIX,adfox.ru
