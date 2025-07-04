@@ -2,8 +2,8 @@ payload:
     - IP-CIDR6,::/0
     - GEOSITE,category-ads-all
     - GEOSITE,category-porn
-    - GEOSITE,win-spy
     - GEOSITE,category-public-tracker
+    - GEOSITE,win-spy
     - GEOSITE,tracker
     - GEOSITE,rutracker
     - DOMAIN-KEYWORD,kaspersky
