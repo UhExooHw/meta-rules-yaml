@@ -1,11 +1,14 @@
 payload:
+# IP Rules
     - IP-CIDR6,::/0
+# GeoSite Rules
     - GEOSITE,category-ads-all
     - GEOSITE,category-porn
     - GEOSITE,category-public-tracker
     - GEOSITE,win-spy
     - GEOSITE,tracker
     - GEOSITE,rutracker
+# Domain Keyword Rules
     - DOMAIN-KEYWORD,kaspersky
     - DOMAIN-KEYWORD,kinoplan
     - DOMAIN-KEYWORD,2gis
@@ -14,10 +17,32 @@ payload:
     - DOMAIN-KEYWORD,vk-analytics
     - DOMAIN-KEYWORD,appsflyersdk
     - DOMAIN-KEYWORD,apptracer
+    - DOMAIN-KEYWORD,bing
+# Domain Suffix Rules
     - DOMAIN-SUFFIX,smartscreen-prod.microsoft.com
     - DOMAIN-SUFFIX,appmetrica.yandex.net
     - DOMAIN-SUFFIX,adfox.ru
     - DOMAIN-SUFFIX,startup.mobile.yandex.net
+    - DOMAIN-SUFFIX,events.data.microsoft.com
+    - DOMAIN-SUFFIX,telemetry.microsoft.com
+    - DOMAIN-SUFFIX,data.microsoft.com
+    - DOMAIN-SUFFIX,watson.telemetry.microsoft.com
+    - DOMAIN-SUFFIX,watson.microsoft.com
+    - DOMAIN-SUFFIX,feedback.microsoft.com
+    - DOMAIN-SUFFIX,msedge.net
+    - DOMAIN-SUFFIX,ads.msn.com
+    - DOMAIN-SUFFIX,msn.com
+    - DOMAIN-SUFFIX,pipe.aria.microsoft.com
+    - DOMAIN-SUFFIX,tracker-api.my.com
+    - DOMAIN-SUFFIX,mp.microsoft.com
+    - DOMAIN-SUFFIX,sentry.io
+    - DOMAIN-SUFFIX,cookiepro.com
+    - DOMAIN-SUFFIX,mixpanel.com
+    - DOMAIN-SUFFIX,split.io
+    - DOMAIN-SUFFIX,branch.io
+    - DOMAIN-SUFFIX,hawk.so
+    - DOMAIN-SUFFIX,wdcp.microsoft.com
+# Domain Rules
     - DOMAIN,ads.mozilla.org
     - DOMAIN,incoming.telemetry.mozilla.org
     - DOMAIN,location.services.mozilla.com
@@ -175,6 +200,7 @@ payload:
     - DOMAIN,sdkconfig.ad.xiaomi.com
     - DOMAIN,sdkconfig.ad.intl.xiaomi.com
     - DOMAIN,tracking.rus.miui.com
+    - DOMAIN,adfs.oppomobile
     - DOMAIN,adfs.oppomobile.com
     - DOMAIN,adx.ads.oppomobile.com
     - DOMAIN,ck.ads.oppomobile.com
@@ -216,33 +242,22 @@ payload:
     - DOMAIN,connectivitycheck.gstatic.com
     - DOMAIN,captive.apple.com
     - DOMAIN,networkcheck.kde.org
-    - DOMAIN-SUFFIX,events.data.microsoft.com
-    - DOMAIN-SUFFIX,telemetry.microsoft.com
-    - DOMAIN-SUFFIX,data.microsoft.com
     - DOMAIN,v10.vortex-win.data.microsoft.com
     - DOMAIN,settings-win.data.microsoft.com
-    - DOMAIN-SUFFIX,watson.telemetry.microsoft.com
     - DOMAIN,oca.telemetry.microsoft.com
     - DOMAIN,feedback.microsoft-hohm.com
-    - DOMAIN-SUFFIX,watson.microsoft.com
-    - DOMAIN-SUFFIX,feedback.microsoft.com
-    - DOMAIN-KEYWORD,bing
-    - DOMAIN-SUFFIX,msedge.net
     - DOMAIN,arc.msn.com
     - DOMAIN,ris.api.iris.microsoft.com
     - DOMAIN,fd.api.iris.microsoft.com
-    - DOMAIN-SUFFIX,ads.msn.com
     - DOMAIN,storecatalogrevocation.storequality.microsoft.com
     - DOMAIN,manage.devcenter.microsoft.com
     - DOMAIN,edge.microsoft.com
     - DOMAIN,msedge.api.cdp.microsoft.com
-    - DOMAIN-SUFFIX,msn.com
     - DOMAIN,staticview.msn.com
     - DOMAIN,ntp.msn.com
     - DOMAIN,srtb.msn.com
     - DOMAIN,self.events.data.microsoft.com
     - DOMAIN,telecommandstorageprod.blob.core.windows.net
-    - DOMAIN-SUFFIX,pipe.aria.microsoft.com
     - DOMAIN,config.edge.skype.com
     - DOMAIN,config.teams.microsoft.com
     - DOMAIN,teams.events.data.microsoft.com
@@ -255,7 +270,7 @@ payload:
     - DOMAIN,edge.skype.com
     - DOMAIN,experimental-api.asm.skype.com
     - DOMAIN,trouter-azsc-ukwe-0-b.trouter.skype.com
-    - DOMAIN,cs.dds.microsoft.com,
+    - DOMAIN,cs.dds.microsoft.com
     - DOMAIN,wallet.microsoft.com
     - DOMAIN,mediaredirect.microsoft.com
     - DOMAIN,int.whiteboard.microsoft.com
@@ -281,9 +296,6 @@ payload:
     - DOMAIN,trk.mail.ru
     - DOMAIN,reklama.mail.ru
     - DOMAIN,telemetry.dzen.ru
-    - DOMAIN-SUFFIX,tracker-api.my.com
-    - DOMAIN-SUFFIX,mp.microsoft.com
-    - DOMAIN,z-p42.graph.instagram.com
     - DOMAIN,portal.mail.ru
     - DOMAIN,cspreport.mail.ru
     - DOMAIN,rs.mail.ru
@@ -291,19 +303,12 @@ payload:
     - DOMAIN,xray.mail.ru
     - DOMAIN,c.aps.amazon-adsystem.com
     - DOMAIN,log.strm.yandex.ru
-    - DOMAIN,geolocation.onetrust.com #discord web: geo cookie manager
-    - DOMAIN,googletagmanager.com #discord web: ads
-    - DOMAIN,hubspotonwebflow.com #discord web: tech information
-    - DOMAIN-SUFFIX,sentry.io #discord web: tech information
-    - DOMAIN-SUFFIX,cookiepro.com
-    - DOMAIN-SUFFIX,mixpanel.com
-    - DOMAIN-SUFFIX,split.io
-    - DOMAIN-SUFFIX,branch.io
+    - DOMAIN,geolocation.onetrust.com
+    - DOMAIN,googletagmanager.com
+    - DOMAIN,hubspotonwebflow.com
     - DOMAIN,pixel-static.spotify.com
     - DOMAIN,pixel.spotify.com
     - DOMAIN,client-metrics.discordapp.net
-    - DOMAIN-SUFFIX,hawk.so
-    - DOMAIN-SUFFIX,wdcp.microsoft.com
     - DOMAIN,firefox.settings.services.mozilla.com
     - DOMAIN,firefox-settings-attachments.cdn.mozilla.net
     - DOMAIN,content-signature-2.cdn.mozilla.net
