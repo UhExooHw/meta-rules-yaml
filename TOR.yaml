@@ -1,8 +1,0 @@
-payload:
-# GeoSite Rules
-    - GEOSITE,protonmail
-    - GEOSITE,duckduckgo
-# Domain Keyword Rules
-    - DOMAIN-KEYWORD,torproject
-# Domain Suffix Rules
-    - DOMAIN-SUFFIX,onion
