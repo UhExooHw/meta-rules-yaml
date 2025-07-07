@@ -22,5 +22,6 @@ for url in urls:
 
 with open("ADS.yaml", "w", encoding="utf-8") as f:
     f.write("payload:\n")
+    f.write("# Domain Rules\n")
     for domain in sorted(d):
         f.write(f"    - DOMAIN,{domain}\n")
