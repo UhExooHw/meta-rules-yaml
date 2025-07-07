@@ -1,7 +1,7 @@
 import requests
 
 urls = [
-    "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts",
+    "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts",
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/ultimate.txt"
 ]
 
