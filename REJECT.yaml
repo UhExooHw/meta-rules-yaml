@@ -1,6 +1,4 @@
 payload:
-# IP Rules
-    - IP-CIDR6,::/0
 # GeoSite Rules
     - GEOSITE,category-ads-all
     - GEOSITE,category-porn
