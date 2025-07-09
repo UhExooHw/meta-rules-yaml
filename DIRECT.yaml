@@ -1,16 +1,4 @@
 payload:
-# GeoSite Rules
-    - GEOSITE,category-ru
-# GeoIP Rules
     - GEOIP,private
-# Domain Keyword Rules
-    - DOMAIN-KEYWORD,sberbank
-    - DOMAIN-KEYWORD,sber-bank
-# Domain Suffix Rules
-    - DOMAIN-SUFFIX,by
-    - DOMAIN-SUFFIX,xn--90ais
-    - DOMAIN-SUFFIX,avito.st
-# Domain Rules
     - DOMAIN,am-west.gcs.geforcenow.nvidiagrid.net
-# Mixed Rules
     - AND,((DOMAIN-KEYWORD,nvidiagrid),(NETWORK,UDP))
