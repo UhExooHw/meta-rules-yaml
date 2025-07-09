@@ -1,4 +1,8 @@
 payload:
+# GeoIP Rules
     - GEOIP,private
+# Domain Rules
+    - DOMAIN,rebullet.ch
     - DOMAIN,am-west.gcs.geforcenow.nvidiagrid.net
+# Mixed Rules
     - AND,((DOMAIN-KEYWORD,nvidiagrid),(NETWORK,UDP))
