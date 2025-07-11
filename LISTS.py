@@ -1,7 +1,8 @@
 import requests
 
 urls = [
-    "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts"
+    "",
+    ""
 ]
 
 skip = {"localhost", "localhost.localdomain", "local", "broadcasthost",
