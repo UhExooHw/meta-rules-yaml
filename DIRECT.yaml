@@ -1,6 +1,4 @@
 payload:
-# GeoSite Rules
-    - GEOSITE,reddit
 # GeoIP Rules
     - GEOIP,private
 # Domain Rules
