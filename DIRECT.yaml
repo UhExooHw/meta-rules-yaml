@@ -1,5 +1,6 @@
 payload:
-# GeoIP Rules
+# Geo Rules
+    - GEOSITE,category-ru
     - GEOIP,private
 # Domain Rules
     - DOMAIN,rebullet.ch
