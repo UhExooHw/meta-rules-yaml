@@ -2,6 +2,8 @@ payload:
 # Geo Rules
     - GEOSITE,category-ru
     - GEOIP,private
+# Domain Keyword Rules
+    - DOMAIN-KEYWORD,avito
 # Domain Rules
     - DOMAIN,rebullet.ch
     - DOMAIN,am-west.gcs.geforcenow.nvidiagrid.net
